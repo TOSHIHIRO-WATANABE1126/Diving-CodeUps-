@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.text {
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  // color: $black; ほとんどのカラーは#0D2936であるが、#000の箇所もあるので注意！
+  line-height: 1.5;
+}
