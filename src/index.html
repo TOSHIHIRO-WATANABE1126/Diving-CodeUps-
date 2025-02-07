@@ -32,21 +32,163 @@
     <script defer src="./assets/js/script.js"></script>
   </head>
   <body>
-    <header></header>
-    <main>
-      <div class="section-title">
-        <h2 class="section-title__main">
-          <span class="section-title__main--green">C</span>ampaign
-        </h2>
-        <p class="section-title__sub">キャンペーン</p>
+    <!-- header -->
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="header__logo">
+          <a href="#" class="header__logo-link">
+            <img src="./assets/images/common/CodeUps.svg" alt="" />
+          </a>
+        </h1>
+        <nav class="header__nav u-desktop">
+          <ul class="header__items">
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Campaign
+                <span>キャンペーン</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >About us
+                <span>私たちについて</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Information
+                <span>ダイビング情報</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Blog
+                <span>ブログ</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Voice
+                <span>お客様の声</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Price
+                <span>料金一覧</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >FAQ
+                <span>よくある質問</span>
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="" class="header__link"
+                >Contact
+                <span>お問合せ</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hamburger js-hamburger u-mobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="drawer-menu js-drawer">
+          <div class="drawer-menu__inner inner">
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  キャンペーン</a
+                >
+                <a href="#service" class="drawer-menu__link">ライセンス取得</a>
+                <a href="#service" class="drawer-menu__link"
+                  >貸切体験ダイビング</a
+                >
+                <a href="#service" class="drawer-menu__link"
+                  >ナイトダイビング</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  私たちについて</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ダイビング情報</a
+                >
+                <a href="#service" class="drawer-menu__link">ライセンス講習</a>
+                <a href="#service" class="drawer-menu__link">体験ダイビング</a>
+                <a href="#service" class="drawer-menu__link"
+                  >ファンダイビング</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ブログ</a
+                >
+              </li>
+            </ul>
+            <ul class="drawer-menu__items">
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  お客様の声</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  料金一覧</a
+                >
+                <a href="#service" class="drawer-menu__link">ライセンス講習</a>
+                <a href="#service" class="drawer-menu__link">体験ダイビング</a>
+                <a href="#service" class="drawer-menu__link"
+                  >ファンダイビング</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  よくある質問</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link drawer-menu-link">
+                  <div class="drawer-menu-link__image-block">
+                    <img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                    <p class="drawer-menu-link__image-text">プライバシー</p>
+                  </div>
+                  <p class="drawer-menu-link__text">ポリシー</p>
+                </a>
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  利用規約</a
+                >
+              </li>
+              <li class="drawer-menu__item">
+                <a href="#news" class="drawer-menu__link"
+                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  お問い合わせ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="button__block">
-        <a href="#" class="button"
-          >View more <span class="button__arrow-right"></span>
-        </a>
-      </div>
-      <p class="text">テキスト</p>
-    </main>
+    </header>
+    <main></main>
     <footer></footer>
   </body>
 </html>

@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.header {
+  // padding-top: rem(21);
+  background: rgba(13, 41, 54, 0.68);
+  height: rem(80);
+  @include mq(md) {
+    height: rem(90);
+  }
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // max-width: rem(1160);
+  // padding-left: rem(15);
+  // padding-right: rem(15);
+  // margin-inline: auto;
+  @include mq(md) {
+    //   padding-left: rem(40);
+    //   padding-right: rem(40);
+  }
+}
+
+.header__logo {
+  z-index: 9999;
+  width: rem(102);
+  @include mq(md) {
+    width: rem(133);
+  }
+}
+
+.header__logo-link {
+}
+
+.header__nav {
+  height: inherit;
+}
+
+.header__items {
+  height: inherit;
+  display: flex;
+}
+
+.header__item {
+  height: inherit;
+}
+
+.header__item:not(:first-child) {
+  margin-left: 40px;
+}
+
+.header__link {
+  display: inline-block;
+  height: inherit;
+  font-family: $second-font-family;
+  font-size: rem(18);
+  color: $white;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__link span {
+  margin-top: rem(4);
+  display: block;
+  font-size: rem(10);
+  color: $white;
+  line-height: 1.5;
+  text-align: center;
+}
