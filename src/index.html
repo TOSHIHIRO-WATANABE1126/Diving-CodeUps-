@@ -22,14 +22,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Gotu&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
       rel="stylesheet"
     />
-    <!-- css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- header -->
@@ -188,7 +193,175 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- mv -->
+      <div class="mv">
+        <div class="mv__inner">
+          <div class="mv__slider swiper js-mv-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv1-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img src="./assets/images/common/mv1-sp.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv2-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img src="./assets/images/common/mv2-sp.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv3-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img src="./assets/images/common/mv3-sp.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    srcset="./assets/images/common/mv4-pc.jpg"
+                    media="(min-width:768px)"
+                  />
+                  <img src="./assets/images/common/mv4-sp.jpg" alt="" />
+                </picture>
+              </div>
+            </div>
+            <div class="mv__title-block">
+              <h2 class="mv__main-title">DIVING</h2>
+              <p class="mv__sub-title">into the ocean</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- campaign -->
+      <section class="campaign">
+        <div class="campaign__inner inner">
+          <div class="campaign__title section-title">
+            <h2 class="section-title__main">
+              <span class="section-title__main--green">C</span>ampaign
+            </h2>
+            <p class="section-title__sub">キャンペーン</p>
+          </div>
+          <div class="campaign__slider">
+            <div class="swiper campaign__swiper js-campaign-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="campaign__card campaign-card">
+                    <div class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign1-sp.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="campaign-card__text-body">
+                      <span class="campaign-card__label">ライセンス講習</span>
+                      <p class="campaign-card__name">ライセンス取得</p>
+                      <p class="campaign-card__description">
+                        全部コミコミ(お一人様)
+                      </p>
+                      <div class="campaign-card__price">
+                        <span class="campaign-card__list-price">¥56,000</span>
+                        <span class="campaign-card__current-price"
+                          >¥46,000</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="campaign__card campaign-card">
+                    <div class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign2-sp.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="campaign-card__text-body">
+                      <span class="campaign-card__label">体験ダイビング</span>
+                      <p class="campaign-card__name">貸切体験ダイビング</p>
+                      <p class="campaign-card__description">
+                        全部コミコミ(お一人様)
+                      </p>
+                      <div class="campaign-card__price">
+                        <span class="campaign-card__list-price">¥24,000</span>
+                        <span class="campaign-card__current-price"
+                          >¥18,000</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="campaign__card campaign-card">
+                    <div class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign3-sp.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="campaign-card__text-body">
+                      <span class="campaign-card__label">体験ダイビング</span>
+                      <p class="campaign-card__name">ナイトダイビング</p>
+                      <p class="campaign-card__description">
+                        全部コミコミ(お一人様)
+                      </p>
+                      <div class="campaign-card__price">
+                        <span class="campaign-card__list-price">¥10,000</span>
+                        <span class="campaign-card__current-price">¥8,000</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="campaign__card campaign-card">
+                    <div class="campaign-card__img">
+                      <img
+                        src="./assets/images/common/campaign4-sp.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="campaign-card__text-body">
+                      <span class="campaign-card__label">ファンダイビング</span>
+                      <p class="campaign-card__name">貸切ファンダイビング</p>
+                      <p class="campaign-card__description">
+                        全部コミコミ(お一人様)
+                      </p>
+                      <div class="campaign-card__price">
+                        <span class="campaign-card__list-price">¥20,000</span>
+                        <span class="campaign-card__current-price"
+                          >¥16,000</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="campaign__button">
+              <div class="campaign__button-prev"></div>
+              <div class="campaign__button-next"></div>
+            </div>
+          </div>
+
+          <div class="campaign__button-block">
+            <a href="#" class="button"
+              >View more<span class="button__arrow-right"></span
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>

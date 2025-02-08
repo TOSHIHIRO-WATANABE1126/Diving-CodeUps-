@@ -2,7 +2,7 @@
 
 .header {
   // padding-top: rem(21);
-  background: rgba(13, 41, 54, 0.68);
+  background-color: rgba(13, 41, 54, 0.68);
   height: rem(80);
   @include mq(md) {
     height: rem(90);

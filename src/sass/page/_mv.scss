@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.mv {
+  height: 100%;
+}
+
+.mv__inner {
+  position: relative;
+  height: inherit;
+}
+
+.mv__slider {
+  height: inherit;
+}
+
+.swiper {
+}
+
+.swiper-wrapper {
+  height: inherit;
+}
+
+.swiper-slide picture,
+.swiper-slide img {
+  height: inherit;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.mv__title-block {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mv__main-title {
+  font-family: Lato;
+  font-size: rem(40);
+  color: $white;
+  letter-spacing: 0.54em;
+  @include mq(md) {
+    font-size: rem(80);
+  }
+}
+
+.mv__sub-title {
+  text-align: center;
+  color: $white;
+  font-family: $second-font-family;
+  font-size: rem(20);
+}
