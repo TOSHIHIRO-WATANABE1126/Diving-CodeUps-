@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.item {
+  @include mq(md) {
+    width: auto;
+    flex: 1;
+  }
+}
+
+.item:not(:first-child) {
+  // @include mq(md) {
+  //   margin-left: 120px;
+  // }
+}
+
+.item__title-link {
+  margin-top: rem(40);
+  display: flex;
+}
+
+.item-title__img {
+  width: rem(18);
+  height: rem(18);
+}
+
+.item-title__text {
+  margin-left: rem(4);
+  color: $white;
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+.item__link {
+  margin-top: rem(24);
+  margin-left: rem(22);
+  display: block;
+  color: $white;
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  line-height: 1.125;
+}

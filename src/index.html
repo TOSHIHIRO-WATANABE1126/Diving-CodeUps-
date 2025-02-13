@@ -27,19 +27,20 @@
     />
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/jquery.inview.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+    <!-- css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="./assets/js/script.js"></script>
-    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
-      <div class="header__inner inner">
+      <div class="header__inner">
         <h1 class="header__logo">
           <a href="#" class="header__logo-link">
             <img src="./assets/images/common/CodeUps.svg" alt="" />
@@ -108,7 +109,7 @@
             <ul class="drawer-menu__items">
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   キャンペーン</a
                 >
                 <a href="#service" class="drawer-menu__link">ライセンス取得</a>
@@ -121,13 +122,13 @@
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   私たちについて</a
                 >
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   ダイビング情報</a
                 >
                 <a href="#service" class="drawer-menu__link">ライセンス講習</a>
@@ -138,7 +139,7 @@
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   ブログ</a
                 >
               </li>
@@ -146,13 +147,13 @@
             <ul class="drawer-menu__items">
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   お客様の声</a
                 >
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   料金一覧</a
                 >
                 <a href="#service" class="drawer-menu__link">ライセンス講習</a>
@@ -163,14 +164,17 @@
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   よくある質問</a
                 >
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link drawer-menu-link">
                   <div class="drawer-menu-link__image-block">
-                    <img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                    <img
+                      src="./assets/images/common/starfish-icon.svg"
+                      alt=""
+                    />
                     <p class="drawer-menu-link__image-text">プライバシー</p>
                   </div>
                   <p class="drawer-menu-link__text">ポリシー</p>
@@ -178,13 +182,13 @@
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   利用規約</a
                 >
               </li>
               <li class="drawer-menu__item">
                 <a href="#news" class="drawer-menu__link"
-                  ><img src="./assets/images/common/_ヒトデ.svg" alt="" />
+                  ><img src="./assets/images/common/starfish-icon.svg" alt="" />
                   お問い合わせ</a
                 >
               </li>
@@ -358,6 +362,7 @@
             <a href="#" class="button"
               >View more<span class="button__arrow-right"></span
             ></a>
+            <a href="#" class="button__hidden"></a>
           </div>
         </div>
       </section>
@@ -412,8 +417,12 @@
             <p class="section-title__sub">ダイビング情報</p>
           </div>
           <div class="information__contents">
-            <div class="information__img">
-              <img src="./assets/images/common/information-sp.jpg" alt="" />
+            <div class="information__img slide-animation js-slide-animation">
+              <img
+                class="slide-animation__img"
+                src="./assets/images/common/information-sp.jpg"
+                alt=""
+              />
             </div>
             <div class="information__text-body">
               <p class="information__name">ライセンス講習</p>
@@ -474,7 +483,7 @@
               </div>
               <div class="blog__text-body">
                 <time datetime="2023-11-17" class="blog__date">2023.11/17</time>
-                <p class="blog__name">ライセンス取得</p>
+                <p class="blog__name">カクレクマノミ</p>
                 <p class="blog__text text">
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
@@ -495,7 +504,345 @@
           <img src="./assets/images/common/blog-illustration.png" alt="" />
         </div>
       </section>
+
+      <!-- voice -->
+      <section class="voice">
+        <div class="voice__inner inner">
+          <div class="voice__title section-title">
+            <h2 class="section-title__main">
+              <span class="section-title__main--green">V</span>oice
+            </h2>
+            <p class="section-title__sub">お客様の声</p>
+          </div>
+          <ul class="voice__items">
+            <li class="voice__item">
+              <div class="voice__top-body">
+                <div class="voice__top-body-info">
+                  <div class="voice__meta">
+                    <span class="voice__gender">20代(女性)</span>
+                    <span class="voice__course">ライセンス講習</span>
+                  </div>
+                  <p class="voice__top-body-title">
+                    ここにタイトルが入ります。ここにタイトル
+                  </p>
+                </div>
+                <div class="voice__img slide-animation js-slide-animation">
+                  <img
+                    class="slide-animation__img"
+                    src="./assets/images/common/voice1-sp.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p class="voice__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+            </li>
+            <li class="voice__item">
+              <div class="voice__top-body">
+                <div class="voice__top-body-info">
+                  <div class="voice__meta">
+                    <span class="voice__gender">20代(女性)</span>
+                    <span class="voice__course">ファンダイビング</span>
+                  </div>
+                  <p class="voice__top-body-title">
+                    ここにタイトルが入ります。ここにタイトル
+                  </p>
+                </div>
+                <div class="voice__img slide-animation js-slide-animation">
+                  <img
+                    class="slide-animation__img"
+                    src="./assets/images/common/voice2-sp.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <p class="voice__text">
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                ここにテキストが入ります。ここにテキストが入ります。
+              </p>
+            </li>
+          </ul>
+          <div class="voice__button-block">
+            <a href="#" class="button"
+              >View more<span class="button__arrow-right"></span
+            ></a>
+          </div>
+        </div>
+        <div class="voice__illustration-top u-desktop">
+          <img src="./assets/images/common/voice-illustration1.png" alt="" />
+        </div>
+        <div class="voice__illustration-bottom u-desktop">
+          <img src="./assets/images/common/voice-illustration2.png" alt="" />
+        </div>
+      </section>
+
+      <!-- price -->
+      <section class="price">
+        <div class="price__inner inner">
+          <div class="price__title section-title">
+            <h2 class="section-title__main">
+              <span class="section-title__main--green">P</span>rice
+            </h2>
+            <p class="section-title__sub">料金一覧</p>
+          </div>
+          <div class="price__contents">
+            <div class="price__img slide-animation js-slide-animation">
+              <picture>
+                <source
+                  srcset="./assets/images/common/price-pc.jpg"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="slide-animation__img"
+                  src="./assets/images/common/price-sp.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="price__text-block">
+              <div class="price__license">
+                <h3 class="price__name">ライセンス講習</h3>
+                <dl class="price__body">
+                  <dt>オープンウォーターダイバーコース</dt>
+                  <dd>¥50,000</dd>
+                  <dt>アドバンスドオープンウォーターコース</dt>
+                  <dd>¥60,000</dd>
+                  <dt>レスキュー＋EFRコース</dt>
+                  <dd>¥70,000</dd>
+                </dl>
+              </div>
+              <div class="price__experience">
+                <h3 class="price__name">体験ダイビング</h3>
+                <dl class="price__body">
+                  <dt>ビーチ体験ダイビング(半日)</dt>
+                  <dd>¥7,000</dd>
+                  <dt>ビーチ体験ダイビング(1日)</dt>
+                  <dd>¥14,000</dd>
+                  <dt>ボート体験ダイビング(半日)</dt>
+                  <dd>¥10,000</dd>
+                  <dt>ボート体験ダイビング(1日)</dt>
+                  <dd>¥18,000</dd>
+                </dl>
+              </div>
+              <div class="price__fun">
+                <h3 class="price__name">ファンダイビング</h3>
+                <dl class="price__body">
+                  <dt>ビーチダイビング(2ダイブ)</dt>
+                  <dd>¥14,000</dd>
+                  <dt>ボートダイビング(2ダイブ)</dt>
+                  <dd>¥18,000</dd>
+                  <dt>スペシャルダイビング(2ダイブ)</dt>
+                  <dd>¥24,000</dd>
+                  <dt>ナイトダイビング(1ダイブ)</dt>
+                  <dd>¥10,000</dd>
+                </dl>
+              </div>
+              <div class="price__special">
+                <h3 class="price__name">スペシャルダイビング</h3>
+                <dl class="price__body">
+                  <dt>貸切ダイビング(2ダイブ)</dt>
+                  <dd>¥24,000</dd>
+                  <dt>1日ダイビング(3ダイブ)</dt>
+                  <dd>¥32,000</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="price__button-block">
+            <a href="#" class="button"
+              >View more<span class="button__arrow-right"></span
+            ></a>
+          </div>
+        </div>
+        <div class="price__illustration u-desktop">
+          <img src="./assets/images/common/price-illustration.png" alt="" />
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="contact__inner inner">
+          <div class="contact__content">
+            <div class="contact__logo-block">
+              <div class="contact__logo-content">
+                <div class="contact__logo">
+                  <img src="./assets/images/common/logo-green.svg" alt="" />
+                </div>
+                <div class="contact__info-block">
+                  <div class="contact__info-text">
+                    <p>沖縄県那覇市1-1</p>
+                    <p>TEL:0120-000-0000</p>
+                    <p>営業時間:8:30-19:00</p>
+                    <p>定休日:毎週火曜日</p>
+                  </div>
+                  <div class="contact__info-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.4734888827224!2d127.67717481089305!3d26.213800489680988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699dc05bf813%3A0x3501764c0a57176d!2z44CSOTAwLTAwMTUg5rKW57iE55yM6YKj6KaH5biC5LmF6IyC5Zyw77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1739413869416!5m2!1sja!2sjp"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contact__text-block">
+              <div class="contact__title section-title">
+                <h2 class="contact-title__main section-title__main">
+                  <span class="section-title__main--green">C</span>ontact
+                </h2>
+                <p class="contact-title__sub section-title__sub">お問合せ</p>
+              </div>
+              <p class="contact__description">ご予約・お問い合わせはコチラ</p>
+              <div class="contact__button-block">
+                <a href="#" class="button"
+                  >Contact us<span class="button__arrow-right"></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact__illustration">
+          <img src="./assets/images/common/contact-illustration.png" alt="" />
+        </div>
+        <a href="#" class="page-top js-page-top"></a>
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <div class="footer__logo-block">
+          <h1 class="footer__logo">
+            <a href="#" class="footer__logo-link">
+              <img src="/assets/images/common/logo.svg" alt="" />
+            </a>
+          </h1>
+          <div class="footer__sns-block">
+            <a href="" class="footer__facebook">
+              <img src="/assets/images/common/Facebook-logo.svg" alt="" />
+            </a>
+            <a href="" class="footer__instagram">
+              <img src="/assets/images/common/Instagram-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <ul class="footer__items">
+          <li class="footer__first-items">
+            <div class="footer__item item">
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">キャンペーン</span>
+              </a>
+              <a href="#" class="item__link">ライセンス取得</a>
+              <a href="#" class="item__link">貸切体験ダイビング</a>
+              <a href="#" class="item__link">ナイトダイビング</a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">私たちについて</span>
+              </a>
+            </div>
+            <div class="footer__item item">
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">ダイビング情報</span>
+              </a>
+              <a href="#" class="item__link">ライセンス講習</a>
+              <a href="#" class="item__link">体験ダイビング</a>
+              <a href="#" class="item__link">ファンダイビング</a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">ブログ</span>
+              </a>
+            </div>
+          </li>
+          <li class="footer__second-items">
+            <div class="footer__item item">
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">お客様の声</span>
+              </a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">料金一覧</span>
+              </a>
+              <a href="#" class="item__link">ライセンス講習</a>
+              <a href="#" class="item__link">体験ダイビング</a>
+              <a href="#" class="item__link">ファンダイビング</a>
+            </div>
+            <div class="footer__item item">
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">よくある質問</span>
+              </a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text"
+                  >プライバシー<br class="u-mobile" />ポリシー</span
+                >
+              </a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">利用規約</span>
+              </a>
+              <a href="#" class="item__title-link">
+                <img
+                  src="./assets/images/common/starfish-icon.svg"
+                  alt=""
+                  class="item-title__img"
+                />
+                <span class="item-title__text">お問い合わせ</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.page-top {
+  position: fixed;
+  right: rem(20);
+  bottom: rem(20);
+  width: rem(48);
+  height: rem(48);
+  // border: 1px solid $black;
+  background-image: url(../images/common/next-icon.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  transform: rotate(-90deg);
+  background-color: $white;
+  border-radius: 50%;
+  @include mq(md) {
+    width: rem(80);
+    height: rem(80);
+  }
+}

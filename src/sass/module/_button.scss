@@ -1,60 +1,123 @@
 @use "global" as *;
 
-.button__block {
-}
-
 .button {
   display: inline-block;
-  width: rem(202);
-  background-color: $green;
-  padding-top: rem(16);
-  padding-bottom: rem(16);
-  text-align: center;
-  background-color: $green;
-  font-family: $second-font-family;
-  color: $white;
-  font-size: rem(14);
-  line-height: 1.57143;
   position: relative;
+  background: $green;
+  width: rem(202);
+  font-size: rem(14);
+  font-family: $second-font-family;
+  z-index: 10;
+  padding: rem(16) 0;
+  color: $white;
+  text-align: center;
+  transition: 0.3s ease;
 }
 
-.button:hover {
-  opacity: 0.7;
+.button--white {
+  background: $white;
+  color: $green;
 }
 
 .button::after {
-  position: absolute;
-  z-index: -1;
   content: "";
-  top: 4px;
-  right: -4px;
-  bottom: -4px;
-  left: 4px;
   border: 1px solid $green;
-}
-
-.button__arrow-right {
-  margin-left: rem(8);
-  display: inline-block;
-  vertical-align: middle;
-  color: $white;
-  line-height: 1;
-  position: relative;
-  width: rem(40);
-  height: 0.1em;
-  background: currentColor;
-}
-
-.button__arrow-right::before {
-  content: "";
-  width: 0.65em;
-  border: 0.1em solid currentColor;
-  border-left: 0;
-  border-bottom: 0;
-  transform: rotate(45deg);
-  transform-origin: top right;
   position: absolute;
-  // top: 50%;
-  right: -0.05em;
-  box-sizing: border-box;
+  background: $white;
+  color: $green;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  z-index: -10;
+}
+
+.button--white::after {
+  background-color: $green;
+  border: 1px solid $white;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  height: rem(54);
+  width: rem(202);
+  background-color: transparent;
+  border: 1px solid $green;
+  right: rem(-4);
+  bottom: rem(-4);
+  z-index: -100;
+}
+
+.button--white::before {
+  border: 1px solid $white;
+}
+
+.button span {
+  display: inline-block;
+  width: rem(40);
+  height: rem(1);
+  background-color: $white;
+  z-index: 100;
+  margin-left: rem(8);
+  vertical-align: middle;
+  position: relative;
+  border-radius: rem(1);
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.button--white span {
+  background-color: $green;
+}
+
+.button span::after {
+  position: absolute;
+  content: "";
+  right: rem(-1);
+  bottom: rem(3.5);
+  width: rem(10);
+  height: rem(1);
+  background-color: $white;
+  transform: rotate(40deg);
+  border-radius: rem(1);
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.button--white span::after {
+  background-color: $green;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    color: $green;
+  }
+
+  .button--white:hover {
+    color: $white;
+  }
+
+  .button:hover span {
+    background-color: $green;
+  }
+
+  .button--white:hover span {
+    background-color: $white;
+  }
+
+  .button:hover span::after {
+    background-color: $green;
+  }
+
+  .button--white:hover span::after {
+    background-color: $white;
+  }
+
+  .button:hover::after {
+    transform: scale(1, 1);
+  }
 }

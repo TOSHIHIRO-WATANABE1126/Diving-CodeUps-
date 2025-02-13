@@ -1,9 +1,9 @@
 @use "global" as *;
 
 .about {
-  margin-top: rem(80);
+  margin-top: rem(88);
   @include mq(md) {
-    margin-top: rem(140);
+    margin-top: rem(144);
   }
 }
 
@@ -53,6 +53,7 @@
 .about__text-block {
   margin-top: rem(40);
   @include mq(md) {
+    // margin-top: rem(40);
     position: absolute;
     z-index: 3;
     top: rem(75);
@@ -64,6 +65,9 @@
 
 .about__message {
   flex-shrink: 0;
+  @include mq(md) {
+    margin-top: rem(-28);
+  }
 }
 
 .about__message p {
@@ -83,6 +87,7 @@
   @include mq(md) {
     margin-left: rem(40);
     margin-right: rem(40);
+    margin-top: rem(3);
   }
 }
 
@@ -94,17 +99,21 @@
 
 .about__button-block {
   text-align: center;
-  margin-top: rem(50);
+  margin-top: rem(52);
+  margin-right: rem(20);
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(43);
+    margin-left: rem(15);
   }
 }
 
 .about__illustration {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   bottom: rem(-90);
-  right: rem(-95);
+  right: calc(50% - 44vw);
+  // right: calc(50% - rem(634));
+  // right: calc(50% - min(44vw, rem(634)));
 }
 
 .about__illustration img {

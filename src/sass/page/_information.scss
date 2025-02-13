@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .information {
-  margin-top: rem(70);
+  margin-top: rem(75);
   padding-top: rem(80);
   padding-bottom: rem(80);
   background-color: $light-green;
   @include mq(md) {
     margin-top: rem(140);
     padding-top: rem(100);
-    padding-bottom: rem(160);
+    padding-bottom: rem(100);
   }
 }
 
@@ -31,9 +31,10 @@
 }
 
 .information__text-body {
-  margin-top: rem(24);
+  margin-top: rem(28);
   @include mq(md) {
     margin-left: rem(48);
+    margin-top: rem(-4);
   }
 }
 
@@ -47,7 +48,7 @@
   @include mq(md) {
     font-size: rem(24);
     line-height: 1;
-    padding-bottom: rem(8);
+    padding-bottom: rem(10);
   }
 }
 
@@ -55,12 +56,16 @@
   margin-top: rem(8);
   @include mq(md) {
     color: #000;
+    margin-top: rem(4);
   }
 }
 
 .information__button-block {
   margin-top: rem(40);
   text-align: center;
+  @include mq(md) {
+    margin-top: 40px;
+  }
 }
 
 .button {

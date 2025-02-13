@@ -16,7 +16,7 @@
 }
 
 .campaign__slider {
-  margin-top: rem(24);
+  margin-top: rem(27);
   @include mq(md) {
     margin-top: rem(40);
   }
@@ -29,27 +29,30 @@
 
 .campaign-card {
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-  // max-width: rem(280);
-  // @include mq(md) {
-  //   max-width: rem(334);
-  // }
+  max-width: rem(280);
+  @include mq(md) {
+    max-width: rem(334);
+    aspect-ratio: 334 / 452;
+  }
 }
 
 .campaign-card__text-body {
   padding: rem(16) rem(16) rem(23) rem(16);
+  @include mq(md) {
+    padding: rem(27) rem(16) rem(21) rem(19);
+  }
 }
 
 .campaign-card__label {
   display: inline-block;
-  // width: rem(84);
-  padding-top: rem(4);
-  padding-bottom: rem(4);
-  padding-left: rem(12);
-  padding-right: rem(12);
+  padding: rem(4) rem(12) rem(1) rem(12);
   border: 1px solid $green;
   color: $green;
   font-size: 12px;
   line-height: 1.83333;
+  @include mq(md) {
+    padding: rem(4) rem(17) rem(1) rem(15);
+  }
 }
 
 .campaign-card__name {
@@ -57,16 +60,27 @@
   color: $black;
   font-weight: 500;
   line-height: 1.5;
+  @include mq(md) {
+    margin-top: rem(8);
+  }
 }
 
 .campaign-card__description {
   border-top: 1px solid $green;
   margin-top: rem(8);
-  padding-top: rem(16);
+  padding-top: rem(7);
+  padding-left: rem(15);
   text-align: center;
   color: $black;
   font-weight: 500;
   line-height: 1.5;
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    margin-top: rem(6);
+    padding-top: rem(15);
+    padding-left: 0;
+    margin-left: rem(-22);
+  }
 }
 
 .campaign-card__price {
@@ -83,6 +97,7 @@
   position: relative;
   @include mq(md) {
     font-size: rem(24);
+    margin-left: 12px;
   }
 }
 
@@ -98,7 +113,7 @@
 }
 
 .campaign-card__current-price {
-  margin-left: rem(16);
+  margin-left: rem(13);
   color: $green;
   font-family: Lato;
   font-size: rem(32);
@@ -122,7 +137,7 @@
     justify-content: flex-end;
     position: absolute;
     top: 0;
-    right: rem(25);
+    right: rem(24);
   }
 }
 
@@ -137,14 +152,14 @@
 }
 
 .campaign__button-prev {
-  background-image: url(../images/common/campaign-next-icon.png);
+  background-image: url(../images/common/prev-icon.png);
+  position: absolute;
+  top: 0;
+  right: rem(160);
 }
 
 .campaign__button-next {
-  background-image: url(../images/common/campaign-prev-icon.png);
-  position: absolute;
-  top: 0;
-  right: rem(170);
+  background-image: url(../images/common/next-icon.png);
 }
 
 // .campaign__button-prev::after,
@@ -161,6 +176,6 @@
   margin-top: rem(40);
   text-align: center;
   @include mq(md) {
-    margin-top: rem(96);
+    margin-top: rem(76);
   }
 }
