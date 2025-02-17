@@ -7,12 +7,6 @@
   }
 }
 
-.item:not(:first-child) {
-  // @include mq(md) {
-  //   margin-left: 120px;
-  // }
-}
-
 .item__title-link {
   margin-top: rem(40);
   display: flex;

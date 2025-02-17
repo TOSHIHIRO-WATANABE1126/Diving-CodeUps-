@@ -1,28 +1,22 @@
 @use "global" as *;
 
 .about {
-  margin-top: rem(88);
+  margin-top: rem(81);
   @include mq(md) {
-    margin-top: rem(144);
+    margin-top: rem(140);
   }
 }
 
-.about__inner {
-}
-
-.about__title {
-}
-
 .about__contents {
-  position: relative;
-}
-
-.about__img-block {
-  margin-top: rem(50);
+  margin-top: rem(52);
   position: relative;
   @include mq(md) {
     margin-top: rem(120);
   }
+}
+
+.about__img-block {
+  position: relative;
 }
 
 .about__img-block img:first-child {
@@ -99,7 +93,7 @@
 
 .about__button-block {
   text-align: center;
-  margin-top: rem(52);
+  margin-top: rem(50);
   margin-right: rem(20);
   @include mq(md) {
     margin-top: rem(43);
@@ -111,9 +105,7 @@
   position: absolute;
   z-index: 2;
   bottom: rem(-90);
-  right: calc(50% - 44vw);
-  // right: calc(50% - rem(634));
-  // right: calc(50% - min(44vw, rem(634)));
+  right: calc(50% - min(44vw, rem(634)));
 }
 
 .about__illustration img {

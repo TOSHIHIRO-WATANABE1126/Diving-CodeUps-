@@ -10,14 +10,11 @@
   }
 }
 
-.contact__inner {
-}
-
 .contact__content {
   background-color: $white;
   @include mq(md) {
     display: flex;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: rem(4) rem(4) rem(10) rem(0) rgba(0, 0, 0, 0.25);
     margin-top: rem(5);
   }
 }
@@ -34,7 +31,7 @@
 
 .contact__logo-content {
   @include mq(md) {
-    border-right: 1px solid $green;
+    border-right: rem(1) solid $green;
     padding-right: rem(82);
   }
 }
@@ -50,7 +47,7 @@
 }
 
 .contact__info-block {
-  border-top: 1px solid $green;
+  border-top: rem(1) solid $green;
   padding-top: rem(16);
   @include mq(md) {
     padding-top: rem(24);
@@ -72,18 +69,23 @@
   line-height: 1.5;
 }
 
+.contact__info-text p:first-child {
+  margin-top: rem(-1);
+  margin-left: rem(-8);
+}
+
 .contact__info-text p:not(:first-child) {
   margin-top: rem(4);
 }
 
 .contact__info-map {
   width: 100%;
-  margin-top: rem(19);
+  margin-top: rem(17);
   @include mq(md) {
     margin-top: 0;
     margin-left: rem(21);
     width: 68%;
-    max-width: 273px;
+    max-width: rem(273);
   }
 }
 
@@ -137,12 +139,12 @@
 
 .contact__illustration {
   position: absolute;
-  top: rem(-25);
-  right: 0;
+  top: rem(-26);
+  right: rem(15);
   width: rem(109);
   @include mq(md) {
     width: rem(301);
     top: rem(-36);
-    right: rem(50);
+    right: calc(50% - min(47vw, rem(670)));
   }
 }

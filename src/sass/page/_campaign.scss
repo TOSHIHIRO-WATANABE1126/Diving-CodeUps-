@@ -2,6 +2,7 @@
 
 .campaign {
   margin-top: rem(40);
+  padding-bottom: rem(4);
   overflow: hidden;
   @include mq(md) {
     margin-top: rem(120);
@@ -10,9 +11,6 @@
 
 .campaign__inner.inner {
   position: relative;
-}
-
-.campaign__title {
 }
 
 .campaign__slider {
@@ -28,7 +26,7 @@
 }
 
 .campaign-card {
-  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
   max-width: rem(280);
   @include mq(md) {
     max-width: rem(334);
@@ -39,52 +37,51 @@
 .campaign-card__text-body {
   padding: rem(16) rem(16) rem(23) rem(16);
   @include mq(md) {
-    padding: rem(27) rem(16) rem(21) rem(19);
+    padding: rem(21) rem(16) rem(18) rem(14);
   }
 }
 
 .campaign-card__label {
   display: inline-block;
-  padding: rem(4) rem(12) rem(1) rem(12);
-  border: 1px solid $green;
+  padding: rem(5) rem(12) rem(3) rem(12);
+  border: rem(1) solid $green;
   color: $green;
-  font-size: 12px;
+  font-size: rem(12);
   line-height: 1.83333;
   @include mq(md) {
-    padding: rem(4) rem(17) rem(1) rem(15);
+    padding: rem(7) rem(18) rem(6) rem(18);
   }
 }
 
 .campaign-card__name {
   margin-top: rem(4);
+  font-family: $base-font-family;
   color: $black;
   font-weight: 500;
   line-height: 1.5;
+  padding-bottom: rem(7);
+  border-bottom: rem(1) solid $green;
   @include mq(md) {
-    margin-top: rem(8);
+    margin-top: rem(4);
+    padding-bottom: rem(8);
   }
 }
 
 .campaign-card__description {
-  border-top: 1px solid $green;
   margin-top: rem(8);
-  padding-top: rem(7);
   padding-left: rem(15);
   text-align: center;
   color: $black;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.05em;
   @include mq(md) {
-    margin-top: rem(6);
-    padding-top: rem(15);
+    margin-top: rem(16);
     padding-left: 0;
-    margin-left: rem(-22);
   }
 }
 
 .campaign-card__price {
-  margin-top: rem(8);
+  margin-top: rem(6);
   text-align: center;
 }
 
@@ -97,7 +94,6 @@
   position: relative;
   @include mq(md) {
     font-size: rem(24);
-    margin-left: 12px;
   }
 }
 
@@ -121,6 +117,7 @@
   line-height: 1;
   @include mq(md) {
     font-size: rem(40);
+    margin-left: rem(18);
   }
 }
 
@@ -129,8 +126,6 @@
   @include mq(md) {
     max-width: rem(1080);
     width: 100%;
-    // padding-left: rem(25);
-    // padding-right: rem(25);
     aspect-ratio: 1080 / 82;
     display: flex;
     align-items: center;
@@ -149,6 +144,7 @@
   background-position: center center;
   background-size: cover;
   flex-shrink: 1;
+  cursor: pointer;
 }
 
 .campaign__button-prev {
@@ -162,20 +158,10 @@
   background-image: url(../images/common/next-icon.png);
 }
 
-// .campaign__button-prev::after,
-// .campaign__button-next::after {
-//   position: absolute;
-// }
-
-// .campaign__button-prev::after {
-// }
-// .campaign__button-next::after {
-// }
-
 .campaign__button-block {
   margin-top: rem(40);
   text-align: center;
   @include mq(md) {
-    margin-top: rem(76);
+    margin-top: rem(73);
   }
 }

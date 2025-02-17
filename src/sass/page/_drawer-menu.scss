@@ -22,20 +22,14 @@
 }
 
 .drawer-menu__items {
-  margin-top: rem(125);
-  // width: 100%;
-  // height: inherit;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
+  margin-top: rem(104);
 }
 
 .drawer-menu__items:first-child {
-  flex-shrink: 0;
 }
 
 .drawer-menu__items:nth-child(2) {
+  margin-left: rem(12);
 }
 
 .drawer-menu__item {
@@ -64,7 +58,7 @@
   color: $white;
   font-weight: normal;
   font-size: rem(16);
-  font-size: 16px;
+  font-size: rem(16);
   line-height: 1.125;
 }
 

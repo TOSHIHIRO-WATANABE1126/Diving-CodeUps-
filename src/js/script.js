@@ -6,15 +6,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 });
 
-// var mvSwiper = new Swiper(".js-mv-swiper", {
-//   loop: true,
-//   effect: "fade",
-//   speed: 3000,
-//   allowTouchMove: false,
-//   autoplay: {
-//     delay: 3000,
-//   },
-// });
+var mvSwiper = new Swiper(".js-mv-swiper", {
+  loop: true,
+  effect: "fade",
+  speed: 3000,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 3000,
+  },
+});
 
 var campaignSwiper = new Swiper(".js-campaign-swiper", {
   navigation:{
@@ -23,20 +23,19 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
   },
   loop: true,
   effect: "card",
-  speed: 300,
+  speed: 3000,
   spaceBetween: 24,
   slidesPerView: 1.2,
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints:{
     768:{
       spaceBetween:40,
       slidesPerView: 3.01,
+      autoplay:false,
     }
   },
-  // centeredSliders: true,
-  // allowTouchMove: false,
-  // autoplay: {
-  //   delay: 3000,
-  // },
 });
 
 // 画像のスライドアニメーション

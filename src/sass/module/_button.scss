@@ -7,6 +7,7 @@
   width: rem(202);
   font-size: rem(14);
   font-family: $second-font-family;
+  line-height: 1.57143;
   z-index: 10;
   padding: rem(16) 0;
   color: $white;
@@ -21,7 +22,7 @@
 
 .button::after {
   content: "";
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   position: absolute;
   background: $white;
   color: $green;
@@ -35,25 +36,20 @@
   z-index: -10;
 }
 
-.button--white::after {
-  background-color: $green;
-  border: 1px solid $white;
-}
-
 .button::before {
   content: "";
   position: absolute;
   height: rem(54);
   width: rem(202);
   background-color: transparent;
-  border: 1px solid $green;
+  border: rem(1) solid $green;
   right: rem(-4);
   bottom: rem(-4);
-  z-index: -100;
+  z-index: -1;
 }
 
 .button--white::before {
-  border: 1px solid $white;
+  border: rem(1) solid $white;
 }
 
 .button span {
@@ -70,10 +66,6 @@
   z-index: 100;
 }
 
-.button--white span {
-  background-color: $green;
-}
-
 .button span::after {
   position: absolute;
   content: "";
@@ -85,7 +77,7 @@
   transform: rotate(40deg);
   border-radius: rem(1);
   transition: 0.3s ease;
-  z-index: 100;
+  z-index: 1;
 }
 
 .button--white span::after {
@@ -97,24 +89,12 @@
     color: $green;
   }
 
-  .button--white:hover {
-    color: $white;
-  }
-
   .button:hover span {
     background-color: $green;
   }
 
-  .button--white:hover span {
-    background-color: $white;
-  }
-
   .button:hover span::after {
     background-color: $green;
-  }
-
-  .button--white:hover span::after {
-    background-color: $white;
   }
 
   .button:hover::after {

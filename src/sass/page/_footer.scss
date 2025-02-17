@@ -10,9 +10,6 @@
   }
 }
 
-.footer__inner {
-}
-
 .footer__logo-block {
   @include mq(md) {
     display: flex;
@@ -24,9 +21,6 @@
   @include mq(md) {
     width: rem(200);
   }
-}
-
-.footer__logo-link {
 }
 
 .footer__sns-block {
@@ -48,7 +42,7 @@
 }
 
 .footer__instagram {
-  margin-left: rem(14);
+  margin-left: rem(15);
 }
 
 .footer__items {
@@ -69,7 +63,7 @@
 }
 
 .footer__second-items {
-  margin-left: rem(19);
+  margin-left: rem(18);
   @include mq(md) {
     display: flex;
     flex-grow: 1;
@@ -79,11 +73,8 @@
   }
 }
 
-.footer__item {
-}
-
 .footer__copyright {
-  margin-top: rem(40);
+  margin-top: rem(34);
   text-align: center;
   @include mq(md) {
     margin-top: rem(80);
