@@ -13,28 +13,35 @@
   }
 }
 
-.price__contents {
+.price__content {
   margin-top: rem(27);
   @include mq(md) {
     margin-top: rem(40);
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 }
 
 .price__img {
   @include mq(md) {
-    margin-left: rem(53);
+    width: 45.555%;
   }
 }
 
 .price__img img {
+  aspect-ratio: 345 / 227;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 492 / 746;
+  }
 }
 
 .price__text-block {
   margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(-41);
+    width: 45.555%;
   }
 }
 
@@ -62,8 +69,8 @@
 }
 
 .price__body {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 80% 20%;
 }
 
 .price__body dt,
@@ -80,19 +87,11 @@
 }
 
 .price__body dt {
-  width: 74%;
-  @include mq(md) {
-    width: 65%;
-  }
 }
 
 .price__body dd {
-  width: 24%;
   text-align: right;
   margin-left: rem(5);
-  @include mq(md) {
-    width: 26%;
-  }
 }
 
 .price__button-block {

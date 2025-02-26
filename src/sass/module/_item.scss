@@ -10,6 +10,11 @@
 .item__title-link {
   margin-top: rem(40);
   display: flex;
+  transition: opacity 0.3s;
+}
+
+.item__title-link:hover {
+  opacity: 0.7;
 }
 
 .item-title__img {
@@ -34,4 +39,9 @@
   font-family: "Noto Sans JP";
   font-size: rem(16);
   line-height: 1.125;
+  transition: opacity 0.3s;
+}
+
+.item__link:hover {
+  opacity: 0.7;
 }
