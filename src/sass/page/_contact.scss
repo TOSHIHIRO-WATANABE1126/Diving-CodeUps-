@@ -2,11 +2,9 @@
 
 .contact {
   margin-top: rem(80);
-  margin-bottom: rem(104);
   position: relative;
   @include mq(md) {
     margin-top: rem(140);
-    margin-bottom: rem(160);
   }
 }
 

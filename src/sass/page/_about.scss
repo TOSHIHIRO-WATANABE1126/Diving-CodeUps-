@@ -90,10 +90,8 @@
 .about__button-block {
   text-align: center;
   margin-top: rem(50);
-  margin-right: rem(20);
   @include mq(md) {
     margin-top: rem(43);
-    margin-left: rem(15);
   }
 }
 

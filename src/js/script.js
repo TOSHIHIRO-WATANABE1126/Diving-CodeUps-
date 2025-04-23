@@ -7,76 +7,21 @@ jQuery(function ($) {
     
     // `.js-hamburger` に `is-active` クラスを追加・削除（トグル）する
     // → メニューの開閉状態を視覚的に切り替えるためのクラス
-    $(".js-hamburger").toggleClass("is-active");
+    $(".js-hamburger, .js-header").toggleClass("is-active");
 
     // `.js-drawer` をフェードイン・フェードアウト（ゆっくり表示・非表示）を切り替える
     $(".js-drawer").fadeToggle();
   });
 });
 
-$(window).on("resize", function () {
-  // 画面サイズが変更されたとき（resize イベントが発生したとき）の処理
-
-  // `window.matchMedia("(min-width: 768px)").matches` で PCサイズ（768px以上）かどうかを判定
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    
-    // ハンバーガーメニューの `is-active` クラスを削除（開いていたら閉じる）
-    $(".js-hamburger").removeClass("is-active");
-
-    // ドロワーメニュー（ナビゲーションメニュー）をフェードアウト（非表示にする）
-    $(".js-drawer").fadeOut();
-  }
-});
-
-
-  // // ハンバーガーメニューリサイズで閉じる
-  // $(window).on('resize', function() {
-  //   $(".js-header").removeClass("js-open");
-  //   $('.js-hamburger').removeClass('js-open');
-  //   $('.js-sp-nav').removeClass('js-open');
-  //   $("body").removeClass("noscroll");
-  //   });
-
-  //   // リンククリック時にメニューを閉じる処理
-  //   $(".js-sp-nav a").click(function () {
-  //       $(".js-hamburger").removeClass("js-open"); // ハンバーガーアイコンの状態をリセット
-  //       $(".js-sp-nav").removeClass("js-open");   // メニューを非表示に
-  //       $("body").removeClass("noscroll");        // スクロールロックを解除
-  //   });
-
-// jQuery(function ($) {
-//   // $ を jQuery のエイリアスとして使用する
-//   // jQuery を安全に実行するための基本的な書き方
-
-//   function toggleDrawerDisplay() {
-//     // 現在のウィンドウ幅を取得
-//     var windowWidth = $(window).width();
-    
-//     // 768px以上（PCサイズ）の場合は `.js-drawer` を非表示
-//     if (windowWidth >= 768) {
-//       $(".js-drawer").hide(); // `display: none;` と同じ効果
-//     } else {
-//       // 767px以下（タブレット・スマホサイズ）の場合は `.js-drawer` を表示
-//       $(".js-drawer").show(); // `display: block;` の状態にする
-//     }
-//   }
-
-//   // ウィンドウサイズが変更されたときに `toggleDrawerDisplay()` を実行
-//   $(window).resize(function () {
-//     toggleDrawerDisplay();
-//   });
-// });
-
-
-
 var mvSwiper = new Swiper(".js-mv-swiper", {
   loop: true,
   effect: "fade",
   speed: 3000,
   allowTouchMove: false,
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
 });
 
 var campaignSwiper = new Swiper(".js-campaign-swiper", {
@@ -89,9 +34,9 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
   speed: 3000,
   spaceBetween: 24,
   slidesPerView: 1.2,
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   breakpoints:{
     768:{
       spaceBetween:40,

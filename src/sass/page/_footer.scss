@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .footer {
+  margin-top: rem(104);
   position: relative;
   pointer-events: auto;
   padding-top: rem(48);
   padding-bottom: rem(56);
   background-color: $green;
-  height: rem(1000);
   overflow-y: scroll;
   @include mq(md) {
-    height: rem(559);
+    margin-top: rem(160);
     padding-top: rem(80);
     padding-bottom: rem(80);
   }
