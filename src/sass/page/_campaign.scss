@@ -40,26 +40,32 @@
   }
 }
 
-.campaign__button-next,
-.campaign__button-prev {
-  width: rem(80);
-  height: rem(80);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  flex-shrink: 1;
-  cursor: pointer;
+.campaign__swiper-button-next,
+.campaign__swiper-button-prev {
+  display: none;
+  @include mq(md) {
+    display: block;
+    position: absolute;
+    width: rem(80);
+    height: rem(80);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    flex-shrink: 1;
+    cursor: pointer;
+  }
 }
 
-.campaign__button-prev {
+.campaign__swiper-button-prev {
   background-image: url(../images/common/prev-icon.png);
-  position: absolute;
   top: 0;
-  right: rem(160);
+  right: rem(185);
 }
 
-.campaign__button-next {
+.campaign__swiper-button-next {
   background-image: url(../images/common/next-icon.png);
+  top: 0;
+  right: rem(25);
 }
 
 .campaign__button-block {

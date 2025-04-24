@@ -22,14 +22,14 @@
 }
 
 .drawer-menu__items {
-  margin-top: rem(104);
+  margin-top: rem(24);
 }
 
 .drawer-menu__items:first-child {
 }
 
 .drawer-menu__items:nth-child(2) {
-  margin-left: rem(12);
+  margin-left: rem(8);
 }
 
 .drawer-menu__item {
@@ -75,10 +75,12 @@
 
 .drawer-menu-link__image-block {
   display: flex;
+  align-items: start;
 }
 
 .drawer-menu-link__image-text {
   margin-left: rem(4);
+  text-align: left;
 }
 
 .drawer-menu-link__text {
