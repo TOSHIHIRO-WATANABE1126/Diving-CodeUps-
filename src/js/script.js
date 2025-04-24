@@ -48,8 +48,8 @@ var mvSwiper = new Swiper(".js-mv-swiper", {
 
 var campaignSwiper = new Swiper(".js-campaign-swiper", {
   navigation:{
-   nextEl:".campaign__button-next",
-   prevEl:".campaign__button-prev",
+   nextEl:".campaign__swiper-button-next",
+   prevEl:".campaign__swiper-button-prev",
   },
   loop: true,
   effect: "card",
