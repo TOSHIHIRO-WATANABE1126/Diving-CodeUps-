@@ -19,9 +19,9 @@ var mvSwiper = new Swiper(".js-mv-swiper", {
   effect: "fade",
   speed: 3000,
   allowTouchMove: false,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 });
 
 var campaignSwiper = new Swiper(".js-campaign-swiper", {
@@ -34,9 +34,9 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
   speed: 3000,
   spaceBetween: 24,
   slidesPerView: 1.2,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints:{
     768:{
       spaceBetween:40,
