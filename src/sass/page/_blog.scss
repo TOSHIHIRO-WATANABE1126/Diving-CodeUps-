@@ -23,6 +23,20 @@
   }
 }
 
+.blog::after {
+  @include mq(md) {
+    background-image: url(../images/common/blog-bg-fish.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    top: rem(25);
+    left: calc(50% - min(48vw, rem(620)));
+    width: rem(437);
+    height: rem(201);
+  }
+}
+
 .blog__inner.inner {
   padding-left: rem(21);
   padding-right: rem(21);
@@ -40,30 +54,17 @@
   }
 }
 
-.blog__button-block {
+.blog__cards {
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}
+
+.blog__button {
   text-align: center;
-  margin-top: rem(41);
+  margin-top: rem(39);
   @include mq(md) {
     margin-top: rem(83);
-  }
-}
-
-.blog__bg {
-  @include mq(md) {
-    height: rem(500);
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
-}
-
-.blog__illustration {
-  @include mq(md) {
-    max-width: rem(437);
-    aspect-ratio: 437 / 201;
-    position: absolute;
-    top: rem(25);
-    left: calc(50% - min(43vw, rem(620)));
   }
 }

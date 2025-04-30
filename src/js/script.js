@@ -4,7 +4,7 @@ jQuery(function ($) {
 
   // ハンバーガーメニュー (`.js-hamburger`) またはドロワーメニュー (`.js-drawer`) がクリックされたときの処理
   $(".js-hamburger, .js-drawer").click(function () {
-    
+
     // `.js-hamburger` に `is-active` クラスを追加・削除（トグル）する
     // → メニューの開閉状態を視覚的に切り替えるためのクラス
     $(".js-hamburger, .js-header").toggleClass("is-active");
@@ -99,7 +99,7 @@ box.each(function(){
 
   // ⑩ 画面の中に黒いバーが入ったときに、アニメーションを実行する
   color.on('inview', function(){
-    
+
     // ⑪ アニメーションがまだ動いていない（counter が 0 のとき）だけ実行する
     if(counter == 0){
 

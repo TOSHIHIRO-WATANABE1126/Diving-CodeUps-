@@ -1,9 +1,25 @@
 @use "global" as *;
 
 .about {
-  margin-top: rem(81);
+  margin-top: rem(80);
+  position: relative;
   @include mq(md) {
     margin-top: rem(138);
+  }
+}
+
+.about::before {
+  @include mq(md) {
+    background-image: url(../images/common/about-illustration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    content: "";
+    bottom: rem(-93);
+    right: calc(50% - min(48vw, rem(634)));
+    width: rem(194);
+    height: rem(181);
   }
 }
 
@@ -16,7 +32,7 @@
   }
 }
 
-.about__first-img {
+.about__first-image {
   width: 37%;
   aspect-ratio: 128 / 194;
   position: absolute;
@@ -31,7 +47,7 @@
   }
 }
 
-.about__second-img {
+.about__second-image {
   width: 82%;
   aspect-ratio: 281 / 186;
   margin-left: auto;
@@ -41,22 +57,23 @@
   }
 }
 
-.about__text-block {
+.about__text-body {
   margin-top: rem(40);
   @include mq(md) {
     position: absolute;
     z-index: 3;
-    top: rem(73);
+    top: rem(115);
     left: rem(200);
     display: flex;
-    align-items: center;
+    margin-top: 0;
+    margin-right: rem(40);
   }
 }
 
 .about__message {
   flex-shrink: 0;
   @include mq(md) {
-    margin-top: rem(-25);
+    margin-top: rem(10);
   }
 }
 
@@ -72,11 +89,10 @@
   }
 }
 
-.about__text__body {
+.about__text__block {
   margin-top: rem(16);
   @include mq(md) {
     margin-left: rem(40);
-    margin-right: rem(40);
     margin-top: rem(7);
   }
 }
@@ -87,22 +103,10 @@
   }
 }
 
-.about__button-block {
+.about__button {
   text-align: center;
   margin-top: rem(50);
   @include mq(md) {
-    margin-top: rem(43);
+    margin-top: rem(40);
   }
-}
-
-.about__illustration {
-  position: absolute;
-  z-index: 2;
-  bottom: rem(-90);
-  right: calc(50% - min(44vw, rem(634)));
-}
-
-.about__illustration img {
-  max-width: rem(191);
-  aspect-ratio: 191 / 181;
 }

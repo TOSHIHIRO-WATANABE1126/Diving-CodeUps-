@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.price-item {
+}
+
+.price-item__title {
+  color: $black;
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.5;
+}
+
+.price-item__grid {
+  margin-top: rem(4);
+  border-top: rem(1) solid $green;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.price-item__grid dt,
+.price-item__grid dd {
+  margin-top: rem(8);
+  color: $black;
+  font-family: "Noto Sans JP";
+  font-size: rem(14);
+  line-height: 1.714;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.price-item__grid dt {
+}
+
+.price-item__grid dd {
+  text-align: right;
+}

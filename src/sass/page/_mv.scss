@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .mv {
-  height: 100vh;
+  // height: 100vh;
 }
 
 .mv__inner {
@@ -22,20 +22,17 @@
   height: inherit;
 }
 
-.swiper-slide img {
-  object-fit: cover;
-}
-
 .mv__title-block {
   position: absolute;
   z-index: 10;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -53%);
+
   @include mq(md) {
     top: 49%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 51%;
+    transform: translate(-50%, -48%);
   }
 }
 
@@ -45,24 +42,18 @@
   font-weight: 400;
   color: $white;
   letter-spacing: 0.54em;
-  margin-top: rem(-3);
-  margin-left: rem(22);
+  text-indent: rem(20);
   @include mq(md) {
     font-size: rem(80);
-    margin-top: 0;
-    margin-left: rem(44);
   }
 }
 
 .mv__sub-title {
-  margin-top: rem(-6);
-  margin-left: rem(-4);
   text-align: center;
   color: $white;
   font-family: $second-font-family;
   font-size: rem(20);
   @include mq(md) {
-    margin-top: rem(-10);
-    margin-left: rem(-1);
+    text-indent: rem(-30);
   }
 }

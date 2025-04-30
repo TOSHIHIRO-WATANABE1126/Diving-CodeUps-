@@ -2,34 +2,44 @@
 
 .voice {
   position: relative;
-  margin-top: rem(81);
+  margin-top: rem(84);
   @include mq(md) {
     margin-top: rem(142);
   }
 }
 
-.voice__button-block {
+.voice::before {
+  @include mq(md) {
+    background-image: url(../images/common/voice-illustration1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    top: rem(-118);
+    left: calc(50% - min(48vw, rem(620)));
+    width: rem(301);
+    height: rem(138);
+  }
+}
+
+.voice::after {
+  @include mq(md) {
+    background-image: url(../images/common/voice-illustration2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    content: "";
+    bottom: rem(-71);
+    right: calc(50% - min(48vw, rem(540)));
+    width: rem(71);
+    height: rem(162);
+  }
+}
+
+.voice__button {
   text-align: center;
   margin-top: rem(40);
   @include mq(md) {
     margin-top: rem(81);
-  }
-}
-
-.voice__illustration-top {
-  @include mq(md) {
-    position: absolute;
-    max-width: rem(301);
-    top: rem(-121);
-    left: calc(50% - min(43vw, rem(620)));
-  }
-}
-
-.voice__illustration-bottom {
-  @include mq(md) {
-    position: absolute;
-    max-width: rem(71);
-    bottom: rem(-71);
-    right: calc(50% - min(37.7vw, rem(540)));
   }
 }

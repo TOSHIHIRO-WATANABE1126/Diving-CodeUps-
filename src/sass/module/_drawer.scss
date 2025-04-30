@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.drawer {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: rem(60);
+  left: 0;
+  width: 100%;
+  height: calc(100vh - rem(60));
+  background-color: $green;
+  overflow: auto;
+}
+
+.drawer__inner {
+  height: inherit;
+  padding-left: rem(15);
+  padding-right: rem(15);
+}
+
+.drawer__nav {
+  margin-top: rem(5);
+}
