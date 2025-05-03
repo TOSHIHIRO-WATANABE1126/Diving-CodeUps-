@@ -50,15 +50,12 @@
 .header__items {
   height: inherit;
   display: flex;
+  gap: rem(40);
 }
 
 .header__item {
   height: inherit;
   position: relative;
-}
-
-.header__item:not(:first-child) {
-  margin-left: rem(40);
 }
 
 .header__link {

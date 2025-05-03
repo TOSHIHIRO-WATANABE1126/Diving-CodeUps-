@@ -8,7 +8,7 @@
   position: relative;
   @include mq(md) {
     margin-top: rem(145);
-    padding-top: rem(95);
+    padding-top: rem(100);
     padding-bottom: rem(100);
   }
 }
@@ -49,10 +49,6 @@
   @include mq(md) {
     aspect-ratio: 492 / 746;
   }
-}
-
-.price__item:not(:first-child) {
-  margin-top: rem(39);
 }
 
 .price__button {

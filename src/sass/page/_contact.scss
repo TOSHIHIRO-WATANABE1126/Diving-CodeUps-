@@ -60,6 +60,7 @@
 }
 
 .contact__info-logo {
+  display: flex;
   margin-inline: auto;
   width: rem(174);
   @include mq(md) {
@@ -95,7 +96,7 @@
   font-size: rem(16);
   line-height: 1.5;
   @include mq(md) {
-    margin-top: rem(3);
+    margin-top: rem(2);
   }
 }
 

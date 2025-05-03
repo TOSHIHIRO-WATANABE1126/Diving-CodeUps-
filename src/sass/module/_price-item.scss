@@ -4,6 +4,8 @@
 }
 
 .price-item__title {
+  padding-bottom: rem(4);
+  border-bottom: rem(1) solid $green;
   color: $black;
   font-family: "Noto Sans JP";
   font-size: rem(16);
@@ -12,8 +14,6 @@
 }
 
 .price-item__grid {
-  margin-top: rem(4);
-  border-top: rem(1) solid $green;
   display: grid;
   grid-template-columns: 80% 20%;
 }

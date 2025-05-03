@@ -2,8 +2,12 @@
 
 .price__items {
   margin-top: rem(42);
+  display: flex;
+  flex-direction: column;
+  gap: rem(39);
+
   @include mq(md) {
-    margin-top: rem(3);
+    margin-top: 0;
     width: 45.555%;
   }
 }
