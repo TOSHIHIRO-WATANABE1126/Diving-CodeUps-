@@ -69,7 +69,7 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
       spaceBetween:40,
       slidesPerView: "auto",
       // slidesPerView: 3.01,
-      autoplay:false,
+      autoplay:false
   // width:334
     }
   },
