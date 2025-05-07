@@ -41,9 +41,9 @@ var mvSwiper = new Swiper(".js-mv-swiper", {
   effect: "fade",
   speed: 3000,
   allowTouchMove: false,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 });
 
 
@@ -53,18 +53,24 @@ var campaignSwiper = new Swiper(".js-campaign-swiper", {
    prevEl:".campaign__swiper-button-prev",
   },
   loop: true,
-  effect: "card",
-  speed: 3000,
-  spaceBetween: 24,
-  slidesPerView: 1.2,
+  speed: 2000,
+  slidesPerView: "auto",
+//  slidesPerView: 1.2,
+  spaceBetween: 26,
+  // loopedSlides: 5,
+  // loopAdditionalSlides: 10,
+
   autoplay: {
     delay: 3000,
   },
+  // width:280,
   breakpoints:{
     768:{
       spaceBetween:40,
-      slidesPerView: 3.01,
+      slidesPerView: "auto",
+      // slidesPerView: 3.01,
       autoplay:false,
+  // width:334
     }
   },
 });
