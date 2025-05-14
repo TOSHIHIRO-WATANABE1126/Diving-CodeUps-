@@ -32,8 +32,16 @@
   grid-area: b;
 }
 
+.global-nav__item--pl:nth-of-type(3) {
+  padding-left: rem(14);
+}
+
 .global-nav__item:nth-of-type(4) {
   grid-area: d;
+}
+
+.global-nav__item--pl:nth-of-type(4) {
+  padding-left: rem(14);
 }
 
 .global-nav__link {

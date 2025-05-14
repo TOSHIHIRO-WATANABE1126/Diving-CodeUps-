@@ -9,6 +9,7 @@
   color: $black;
   font-size: rem(32);
   line-height: 1.25;
+  text-transform: capitalize;
   @include mq(md) {
     font-size: rem(40);
     line-height: 1;
@@ -19,6 +20,11 @@
   color: $green;
 }
 
+.section-title__main--white {
+  @include mq(md) {
+    color: $white;
+  }
+}
 .section-title__main--white::first-letter {
   @include mq(md) {
     color: $white;
@@ -32,5 +38,11 @@
   line-height: 1.5;
   @include mq(md) {
     margin-top: rem(8);
+  }
+}
+
+.section-title__sub--white {
+  @include mq(md) {
+    color: $white;
   }
 }

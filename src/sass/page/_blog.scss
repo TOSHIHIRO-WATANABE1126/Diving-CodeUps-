@@ -42,12 +42,6 @@
   padding-right: rem(21);
 }
 
-.blog__main-title {
-  @include mq(md) {
-    color: $white;
-  }
-}
-
 .blog__sub-title {
   @include mq(md) {
     color: $white;
