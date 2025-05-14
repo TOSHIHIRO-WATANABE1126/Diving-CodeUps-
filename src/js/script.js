@@ -97,3 +97,29 @@ $(function () {
     return false;
   });
 });
+
+  // アニメーション
+  var box = $(".colorbox"),   //.colorboxのクラスを持つすべての要素を取得し、jQueryオブジェクトに格納
+    speed = 700;   //アニメーションのスピードを設定
+
+  box.each(function () {   //取得したすべての.colorboxに対して処理を行う
+    $(this).append('<div class="color"></div>');   //各.colorboxの中に新しい<div class="color"></div>を追加 この要素がアニメーションに使用される
+    var color = $(this).find(".color"),   //追加した.colorを取得
+      image = $(this).find("img");    //.colorbox内のimg要素を取得
+    var counter = 0;   //一度だけアニメーションを実行するためのカウンター
+
+    image.css("opacity", "0");  // 画像の透明度を0に設定し、非表示にする
+    color.css("width", "0%");   // .colorの幅を0%に設定し、非表示にする
+    color.on("inview", function () {   // .colorが画面内に入ったときの処理
+      if (counter == 0) {   //カウンターが0のときのみアニメーションを実行
+        $(this)
+          .delay(200)
+          .animate({ width: "100%" }, speed, function () {   //幅を100%にアニメーション
+            image.css("opacity", "1");   // 画像の透明度を1に設定し、表示する
+            $(this).css({ left: "auto", right: "0" });   //位置を調整
+            $(this).animate({ width: "0%" }, speed);   //幅を0%に戻すアニメーション
+          });
+        counter = 1;   //カウンターを1に設定し、再度アニメーションが実行されないようにする
+      }
+    });
+  });

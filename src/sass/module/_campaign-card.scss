@@ -1,0 +1,128 @@
+@use "global" as *;
+
+.campaign-card {
+  display: grid;
+  box-shadow: rem(2) rem(2) rem(10) rem(0) rgba(0, 0, 0, 0.25);
+  max-width: rem(280);
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(330);
+  }
+}
+
+.campaign-card__link {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.campaign-card__image {
+  position: relative;
+}
+
+.campaign-card__image::before {
+  display: block;
+  padding-top: 67.1%;
+  content: "";
+  @include mq(md) {
+    padding-top: 66.7%;
+  }
+}
+
+.campaign-card__image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-card__text-body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: rem(16) rem(16) rem(27) rem(16);
+  @include mq(md) {
+    padding: rem(21) rem(16) rem(45) rem(16);
+  }
+}
+
+.campaign-card__label {
+  width: fit-content;
+  padding: rem(2) rem(10) rem(2) rem(12);
+  border: rem(1) solid $green;
+  color: $green;
+  font-size: rem(12);
+  line-height: 1.83333;
+  @include mq(md) {
+    padding: rem(7) rem(18) rem(6) rem(18);
+  }
+}
+
+.campaign-card__title {
+  margin-top: rem(5);
+  padding-bottom: rem(9);
+  border-bottom: rem(1) solid $green;
+  font-family: $base-font-family;
+  color: $black;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.campaign-card__description {
+  margin-top: rem(9);
+  text-align: center;
+  font-size: rem(14);
+  color: $black;
+  font-weight: 400;
+  line-height: 1.71;
+  @include mq(md) {
+    margin-top: rem(15);
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.campaign-card__price {
+  margin-top: rem(7);
+  text-align: center;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+  @include mq(md) {
+  }
+}
+
+.campaign-card__list-price {
+  color: $black;
+  font-family: Lato;
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1;
+  position: relative;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.campaign-card__list-price::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: rem(3);
+  background-color: #c94800;
+}
+
+.campaign-card__current-price {
+  color: $green;
+  font-family: Lato;
+  font-size: rem(32);
+  font-weight: $bold;
+  line-height: 1;
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
