@@ -2,10 +2,6 @@
 
 .voice {
   position: relative;
-  margin-top: rem(84);
-  @include mq(md) {
-    margin-top: rem(142);
-  }
 }
 
 .voice::before {

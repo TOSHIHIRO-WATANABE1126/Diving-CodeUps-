@@ -1,11 +1,7 @@
 @use "global" as *;
 
 .about {
-  margin-top: rem(77);
   position: relative;
-  @include mq(md) {
-    margin-top: rem(138);
-  }
 }
 
 .about::before {
@@ -95,7 +91,11 @@
   }
 }
 
-.about__text.text {
+.about__text {
+  font-family: "Noto Sans JP";
+  color: $black;
+  font-size: rem(16);
+  line-height: 1.5;
   @include mq(md) {
     color: $white;
   }
