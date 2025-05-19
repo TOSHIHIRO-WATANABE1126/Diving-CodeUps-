@@ -16,6 +16,13 @@
   }
 }
 
+.section-title__main--under-page {
+  font-size: 80px;
+  @include mq(md) {
+    font-size: 80px;
+  }
+}
+
 .section-title__main::first-letter {
   color: $green;
 }
@@ -38,6 +45,13 @@
   line-height: 1.5;
   @include mq(md) {
     margin-top: rem(8);
+  }
+}
+
+.section-title__sub--under-page {
+  margin-top: -15px;
+  @include mq(md) {
+    margin-top: -5px;
   }
 }
 

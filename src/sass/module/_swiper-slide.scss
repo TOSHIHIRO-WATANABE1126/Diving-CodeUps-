@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.swiper-slide picture,
+.swiper-slide img {
+  height: inherit;
+}

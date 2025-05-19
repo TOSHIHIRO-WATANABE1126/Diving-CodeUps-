@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.breadcrumb {
+}
+
+.breadcrumb__inner.inner {
+  padding-left: 19px;
+}
+
+.breadcrumb__items {
+  display: flex;
+  column-gap: 8px;
+}
+
+.breadcrumb__item {
+}
+
+.breadcrumb__link {
+  font-size: 14px;
+  font-family: $base-font-family;
+  font-weight: 400;
+  color: $black;
+  line-height: normal;
+}
+
+.breadcrumb__separator {
+}

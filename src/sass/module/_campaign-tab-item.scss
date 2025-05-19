@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.campaign-tab-item {
+  width: 162px;
+  height: 34px;
+  border: 1px solid $green;
+  font-size: 14px;
+  font-family: $base-font-family;
+  color: $green;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.57;
+  text-align: center;
+}
+
+.campaign-tab-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: inherit;
+  text-decoration: none;
+}
+
+.campaign-tab-item--active {
+  color: $white;
+  background-color: $green;
+}
