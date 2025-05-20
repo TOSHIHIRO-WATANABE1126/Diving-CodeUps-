@@ -123,3 +123,42 @@ $(function () {
       }
     });
   });
+
+ //モーダルウィンドウ
+  $(document).ready(function () {
+    // 変数に要素を格納
+    var trigger = $(".js-gallery"),
+      wrapper = $(".modal__wrapper"),
+      layer = $(".modal__layer"),
+      container = $(".modal__container"),
+      content = $(".modal__content");
+
+    // 『ギャラリーの画像』をクリックしたら、モーダルを開く
+    $(trigger).click(function () {
+      let imgSrc = $(this).find("img").attr("src"); // クリックした画像の src を取得
+      let imgAlt = $(this).find("img").attr("alt"); // alt テキストを取得（アクセシビリティ向上）
+
+      // モーダルに挿入する画像のHTMLを作成
+      let modalImage = `<img src="${imgSrc}" alt="${imgAlt}" class="modal__image">`;
+
+      // モーダル内に画像を挿入
+      $(content).html(modalImage);
+
+      $(wrapper).fadeIn(400); // モーダルを表示
+
+      // スクロール位置を戻す
+      $(container).scrollTop(0);
+
+      // サイトのスクロールを禁止にする
+      $("html, body").css("overflow", "hidden");
+    });
+
+    // 『背景部分（モーダルのレイヤー）』をクリックしたら、モーダルを閉じる
+    $(layer).click(function () {
+      $(wrapper).fadeOut(400); // モーダルを非表示
+
+      // サイトのスクロール禁止を解除
+      $("html, body").css("overflow", "");
+    });
+  });
+

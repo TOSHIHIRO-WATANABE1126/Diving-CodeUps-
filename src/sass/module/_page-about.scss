@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.page-about {
+  position: relative;
+}
+
+.page-about::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 15px;
+  width: 120px;
+  height: 55px;
+  background-image: url("../images/common/voice-illustration1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  @include mq(md) {
+    width: 301px;
+    height: 138px;
+    top: -150px;
+    left: calc(50% - min(48vw, 670px));
+  }
+}

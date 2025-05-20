@@ -1,0 +1,50 @@
+@use "global" as *;
+
+/* モーダル本体 */
+.modal__wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+// モーダルを開くためのレイヤー
+.modal__layer {
+  height: 100%;
+  background: rgba(50, 50, 50, 0.85);
+  cursor: pointer;
+}
+
+// モーダルのコンテンツ
+.modal__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// モーダルのコンテンツ
+.modal__content .modal__image img {
+  width: 10%;
+  height: auto; /* 高さは自動調整 */
+  max-width: 100%; /* 画面幅を超えないようにする */
+}
+
+//
+.modal__content img {
+  width: auto; /* 幅を自動調整 */
+  max-width: 90vw; /* ビューポートの90%を上限にする */
+  max-height: 90vh; /* 画面の高さの90%を上限にする */
+  display: block;
+  margin: 0 auto; /* 画像を中央配置 */
+}
+
+.modal__content .about-gallery__item--large img {
+  width: auto; /* アスペクト比を維持 */
+  max-height: 100%; /* 画面幅に合わせる */
+  display: block;
+}
