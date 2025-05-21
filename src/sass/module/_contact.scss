@@ -13,6 +13,7 @@
   top: rem(-26);
   right: rem(15);
   width: rem(109);
+  height: rem(50);
   @include mq(md) {
     width: rem(301);
     top: rem(-36);

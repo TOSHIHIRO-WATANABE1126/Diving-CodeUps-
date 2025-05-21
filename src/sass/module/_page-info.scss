@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.page-info {
+}
+
+.page-info__inner {
+}
+
+.page-info__tab {
+}
+
+.page-info__cards {
+  margin-top: 16px;
+  @include mq(md) {
+    margin-top: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.tab-menu-buttons {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 6vw, 90px);
+  margin-inline: auto;
+  @include mq(md) {
+    max-width: 100%;
+  }
+}
+
+.tab-menu-buttons__item {
+}

@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.tab {
+}
+
+.tab__menu {
+}
+
+.tab__content {
+  margin-top: 19px;
+  @include mq(md) {
+    margin-top: 30px;
+  }
+}
+
+.tab__panel {
+}

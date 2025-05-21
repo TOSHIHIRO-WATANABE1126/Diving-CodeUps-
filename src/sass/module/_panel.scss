@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.panel {
+  display: none;
+}
+
+.panel.is-active {
+  display: block;
+}
+
+.panel__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 24px 25px;
+  border: 1px solid $green;
+  @include mq(md) {
+    padding: 22px 24px 25px;
+    flex-direction: row;
+    align-items: center;
+    gap: 62px;
+  }
+}
+
+.panel__text-body {
+  @include mq(md) {
+    width: 46.5%;
+  }
+}
+
+.panel__title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid $green;
+  font-size: 24px;
+  font-family: $base-font-family;
+  color: $black;
+  font-weight: $bold;
+  line-height: 1;
+}
+
+.panel__text {
+  margin-top: 5px;
+  font-size: 16px;
+  font-family: $base-font-family;
+  color: $black1;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.panel__image {
+  @include mq(md) {
+    width: 48%;
+  }
+}

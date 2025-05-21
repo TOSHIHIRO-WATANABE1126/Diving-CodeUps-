@@ -162,3 +162,45 @@ $(function () {
     });
   });
 
+// タブ
+// $(function() {
+//   $('.js-info-tab').on('click', function() {
+//     $('.js-info-tab, .page-info-card').removeClass('active');
+  
+//     $(this).addClass('active');
+     
+//     var index = $('.js-info-tab').index(this);
+//     $('.page-info-card').eq(index).addClass('active');
+//   });
+// });
+
+// $(function () {
+//   $('.tab-menu-item').on('click', function () {
+//     const target = $(this).data('tab');
+
+//     // タブの切り替え（ボタン）
+//     $('.tab-menu-item').removeClass('is-active');
+//     $(this).addClass('is-active');
+
+//     // パネルの切り替え（内容）
+//     $('.panel').removeClass('is-active');
+//     $('.panel[data-tab="' + target + '"]').addClass('is-active');
+//   });
+// });
+
+$(document).ready(function () {
+  $('.tab-menu-button').click(function () {
+    // すべてのタブボタンから is-active を外す
+    $('.tab-menu-button').removeClass('is-active');
+    // クリックされたタブボタンに is-active をつける
+    $(this).addClass('is-active');
+
+    // すべてのタブ内容から is-active を外す
+    $('.panel').removeClass('is-active');
+    // クリックされたボタンの data-tab の値を取得
+    let target = $(this).data('tab');
+    // そのIDのコンテンツに is-active をつける
+    $('#' + target).addClass('is-active');
+  });
+});
+

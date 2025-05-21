@@ -169,17 +169,17 @@
             <div class="sub-mv__image">
               <picture>
                 <source
-                  srcset="./assets/images/common/aboutus-pc.jpg"
+                  srcset="./assets/images/common/info-bg-pc.jpg"
                   media="(min-width:768px)"
                 />
                 <img
-                  src="./assets/images/common/aboutus-sp.jpg"
+                  src="./assets/images/common/info-bg-sp.jpg"
                   alt="透き通った海中で亀一匹が泳いでいる様子"
                 />
               </picture>
             </div>
             <div class="sub-mv__title-block">
-              <h2 class="sub-mv__main-title">About us</h2>
+              <h2 class="sub-mv__main-title">Information</h2>
             </div>
           </div>
         </div>
@@ -194,96 +194,82 @@
             </li>
             <li class="breadcrumb__separator">›</li>
             <li class="breadcrumb__item">
-              <a href="#" class="breadcrumb__link">私たちについて</a>
+              <a href="#" class="breadcrumb__link">ダイビング情報</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- page-about -->
-      <div class="page-about top-page-about">
-        <div class="page-about__inner inner">
-          <div class="about__content about__content--under-page">
-            <div class="about__images">
-              <div class="about__first-image about__first-image--under-page">
-                <picture>
-                  <source
-                    srcset="./assets/images/common/about1-pc.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    src="./assets/images/common/about1-sp.jpg"
-                    alt="青空と緑色の葉がついている木の枝の下に沖縄の建物の屋根がある風景"
-                  />
-                </picture>
+      <!-- page-information -->
+      <section class="page-info top-page-info">
+        <div class="page-info__inner inner">
+          <!-- タブ -->
+          <div class="page-info__tab tab">
+            <!-- タブメニュー -->
+            <div class="tab__menu tab-menu">
+              <ul class="tab-menu__buttons tab-menu-buttons">
+                <li
+                  class="tab-menu-buttons__button tab-menu-button is-active"
+                  data-tab="license"
+                >
+                  <span>ライセンス<br class="u-mobile" />講習</span>
+                </li>
+                <li
+                  class="tab-menu-buttons__item tab-menu-button"
+                  data-tab="fun"
+                >
+                  <span>ファン<br class="u-mobile" />ダイビング</span>
+                </li>
+                <li
+                  class="tab-menu-buttons__item tab-menu-button"
+                  data-tab="trial"
+                >
+                  <span>体験<br class="u-mobile" />ダイビング</span>
+                </li>
+              </ul>
+            </div>
+            <!-- タブパネル -->
+            <div class="tab__content">
+              <div class="tab__panel panel is-active" id="license">
+                <div class="panel__content">
+                  <div class="panel__text-body">
+                    <h3 class="panel__title">ライセンス講習</h3>
+                    <p class="panel__text">
+                      泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
+                    </p>
+                  </div>
+                  <div class="panel__image">
+                    <img src="./assets/images/common/license.jpg" alt="" />
+                  </div>
+                </div>
               </div>
-              <div class="about__second-image about__second-image--under-page">
-                <picture>
-                  <source srcset="./assets/images/common/about2-pc.jpg" />
-                  <img
-                    src="./assets/images/common/about2-sp.jpg"
-                    alt="透明な青い海中に、黄色の二匹の魚が対面しながら泳いでいる様子"
-                  />
-                </picture>
+              <div class="tab__panel panel" id="fun">
+                <div class="panel__content">
+                  <div class="panel__text-body">
+                    <h3 class="panel__title">ファンダイビング</h3>
+                    <p class="panel__text">
+                      ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                    </p>
+                  </div>
+                  <div class="panel__image">
+                    <img src="./assets/images/common/fundiving.jpg" alt="" />
+                  </div>
+                </div>
               </div>
-              <div class="about__title--under-page u-mobile">
-                <h2>Dive into<br />the Ocean</h2>
+              <div class="tab__panel panel" id="trial">
+                <div class="panel__content">
+                  <div class="panel__text-body">
+                    <h3 class="panel__title">体験ダイビング</h3>
+                    <p class="panel__text">
+                      ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                    </p>
+                  </div>
+                  <div class="panel__image">
+                    <img src="./assets/images/common/diving.jpg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="about__text-body">
-              <div class="about__message u-desktop">
-                <p>
-                  Dive into<br />
-                  the Ocean
-                </p>
-              </div>
-              <div class="about__text-block about__text-block--under-page">
-                <p class="about__text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="gallery top-gallery">
-        <div class="gallery__inner inner">
-          <div class="gallery__title section-title">
-            <p class="section-title__main">gallery</p>
-            <h2 class="section-title__sub">フォト</h2>
-          </div>
-          <ul class="gallery__items">
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery1.jpg" alt="" />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery2.jpg" alt="" />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery3.jpg" alt="" />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery4.jpg" alt="" />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery5.jpg" alt="" />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img src="./assets/images/common/gallery6.jpg" alt="" />
-            </li>
-          </ul>
-          <div class="modal">
-            <!-- モーダル本体 -->
-            <div class="modal__wrapper">
-              <div class="modal__layer"></div>
-              <div class="modal__container">
-                <!-- モーダル内のコンテンツ -->
-                <div class="modal__content"></div>
-                <!-- / モーダル内のコンテンツ -->
-              </div>
-            </div>
-            <!-- / モーダル本体 -->
           </div>
         </div>
       </section>

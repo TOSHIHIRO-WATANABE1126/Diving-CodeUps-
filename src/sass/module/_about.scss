@@ -75,13 +75,13 @@
   }
 }
 
-.about__title {
+.about__title--under-page {
   position: absolute;
   top: 24px;
   left: 24px;
 }
 
-.about__title h2 {
+.about__title--under-page h2 {
   color: $white;
   font-family: $second-font-family;
   font-size: rem(40);
