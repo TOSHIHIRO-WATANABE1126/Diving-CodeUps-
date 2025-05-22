@@ -1,0 +1,86 @@
+@use "global" as *;
+
+.side-voice {
+}
+
+.side-voice__title {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.side-voice__title h3 {
+  font-family: $base-font-family;
+  font-size: 24px;
+  color: $black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.side-voice__title::before {
+  content: "";
+  background-image: url("../images/common/whale-to-right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.side-voice__title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: $green;
+  top: 0;
+  left: 0;
+}
+
+.side-voice__content {
+}
+
+.side-voice__image {
+  margin-top: 25px;
+  max-width: 294px;
+  aspect-ratio: 294 / 218;
+}
+
+.side-voice__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.side-voice__text-body {
+  margin-top: 11px;
+}
+
+.side-voice__tag {
+  font-size: 12px;
+  font-family: $base-font-family;
+  color: $black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.side-voice__sub-title {
+  font-size: 24px;
+  font-family: $base-font-family;
+  color: $black;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.side-voice__button {
+  margin-top: 44px;
+  text-align: center;
+}

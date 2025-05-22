@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.side-campaign-cards {
+  // padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+
+.side-campaign-cards__card {
+}

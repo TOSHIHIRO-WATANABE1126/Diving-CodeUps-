@@ -3,9 +3,21 @@
 .blog-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: rem(41);
   gap: rem(38);
   @include mq(md) {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.blog-cards--under-page {
+  row-gap: 40px;
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+    row-gap: 86px;
+  }
+}
+
+.blog-cards__card--under-page {
+  max-width: 333px;
 }

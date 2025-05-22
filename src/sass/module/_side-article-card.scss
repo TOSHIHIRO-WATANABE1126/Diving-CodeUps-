@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.side-article-card {
+  background-color: $white;
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+}
+
+.side-article-card__link {
+  display: flex;
+  gap: 8px;
+}
+
+.side-article-card__image {
+  @include mq(md) {
+    width: 50%;
+  }
+}
+
+.side-article-card__text-body {
+}
+
+.side-article-card__date {
+}
+
+.side-article-card__title {
+}

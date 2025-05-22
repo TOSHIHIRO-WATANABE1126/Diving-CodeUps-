@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.side-article-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.side-article-cards__card {
+}

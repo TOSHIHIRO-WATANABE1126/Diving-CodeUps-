@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.side-archive-item {
+}
+
+.side-archive-item__toggle {
+  padding-left: 32px;
+  font-size: 24px;
+  font-family: $base-font-family;
+  font-style: normal;
+  color: $green;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+.side-archive-item__toggle::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-color: $green;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+.side-archive-item__toggle.is-open::before {
+  transform: rotate(0deg);
+}
+
+.side-archive-item__list {
+  display: none;
+  margin-left: 30px;
+}
+
+.side-archive-item__list li {
+  position: relative;
+  padding-left: 26px;
+}
+
+.side-archive-item__list li::before {
+  position: absolute;
+  content: "";
+  top: 11px;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  background-color: $green;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+.side-archive-item__list li:not(:first-child) {
+  margin-top: 6px;
+}
+
+.side-archive-item__list li a {
+  font-size: 24px;
+  font-family: $base-font-family;
+  font-style: normal;
+  color: $green;
+  font-weight: 400;
+  line-height: normal;
+}

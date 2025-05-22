@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.side-campaign {
+}
+
+.side-campaign__title {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding-left: 24px;
+  position: relative;
+}
+
+.side-campaign__title h3 {
+  font-family: $base-font-family;
+  font-size: 24px;
+  color: $black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.side-campaign__title::before {
+  content: "";
+  background-image: url("../images/common/whale-to-right.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.side-campaign__title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: $green;
+  top: 0;
+  left: 0;
+}
+
+.side-campaign__cards {
+  margin-top: 24px;
+}
+
+.side-campaign__button {
+  margin-top: 44px;
+  text-align: center;
+}

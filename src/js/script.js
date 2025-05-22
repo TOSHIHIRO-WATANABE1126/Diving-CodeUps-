@@ -204,3 +204,31 @@ $(document).ready(function () {
   });
 });
 
+// $(function () {
+//     $('.side-archive-item__toggle').click(function () {
+//       const $this = $(this);
+//       const $list = $this.next('.side-archive-item__list');
+
+//       // 表示状態を切り替える
+//       $list.slideToggle(200);
+
+//       // テキスト内のアイコンを切り替える（▶⇄▼）
+//       const isOpen = $this.hasClass('is-open');
+//       if (isOpen) {
+//         $this.html($this.html().replace('▼', '▶'));
+//       } else {
+//         $this.html($this.html().replace('▶', '▼'));
+//       }
+
+//       // 開閉状態のクラス切り替え
+//       $this.toggleClass('is-open');
+//     });
+//   });
+
+  //アーカイブの年をクリックしたら表示切り替え
+  $(document).ready(function () {
+    $(".side-archive-item__toggle").click(function () {
+      $(this).toggleClass("is-open"); // 三角の向きを変更
+      $(this).next(".side-archive-item__list").slideToggle(); // リストの表示・非表示
+    });
+  });
