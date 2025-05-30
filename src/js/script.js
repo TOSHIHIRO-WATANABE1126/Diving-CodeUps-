@@ -232,3 +232,52 @@ $(document).ready(function () {
       $(this).next(".side-archive-item__list").slideToggle(); // リストの表示・非表示
     });
   });
+
+
+  //アコーディオン
+  $(function () {
+    $('.accordion__title').on('click', function () {
+      $(this).toggleClass("is-open"); // 三角の向きを変更
+      // タイトルがクリックされたら、次の .accordion__content を開閉
+      $(this).next('.accordion__content').slideToggle(300);
+    });
+  });
+
+  // checkbox
+$(function(){
+  // ページが読み込まれたらこの中の処理を実行する（jQueryの準備完了イベント）
+  
+  $('.check').on('click', function() {
+    // クラス「check」が付いたチェックボックスがクリックされた時に動く
+
+    if ($(this).prop('checked')) {
+      // もしクリックされたチェックボックスが「チェックされた状態」なら
+
+      $('.check').prop('checked', false);
+      // いったん、すべての「check」クラスのチェックを外す（リセット）
+
+      $(this).prop('checked', true);
+      // そのあとで、自分自身だけチェックを入れる
+      // → 結果として、チェックボックスが1つしか選ばれない状態になる（ラジオボタン風の動き）
+    }
+  });
+});
+
+
+$(function(){
+ // #nameの入力欄がフォーカスを失った時の処理
+  $('#name').on('blur', function() {
+    // 入力値を取得し、前後の空白を除去して空かどうか判定
+    if ($('#name').val().trim() === "") {
+      // 空の場合、エラーメッセージを表示
+      $('#name-error').show();
+      // 入力欄にエラー用クラスを追加
+      $('#name').addClass('input-error');
+    } else {
+      // 入力がある場合、エラーメッセージを非表示
+      $('#name-error').hide();
+      // 入力欄からエラー用クラスを削除
+      $('#name').removeClass('input-error');
+    }
+ });
+});

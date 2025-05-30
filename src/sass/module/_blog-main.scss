@@ -9,3 +9,10 @@
 .blog-main__pagenation {
   margin-top: 70px;
 }
+
+.blog-main__pagenation--single {
+  margin-top: 43px;
+  @include mq(md) {
+    margin-top: 87px;
+  }
+}

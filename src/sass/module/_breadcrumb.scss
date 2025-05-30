@@ -23,5 +23,13 @@
   line-height: normal;
 }
 
+.breadcrumb__link--404 {
+  color: $white;
+}
+
 .breadcrumb__separator {
+}
+
+.breadcrumb__separator--404 {
+  color: $white;
 }

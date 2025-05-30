@@ -1,12 +1,21 @@
 @use "global" as *;
 
 .voice-items {
-  margin-top: rem(45);
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: rem(42);
+  gap: 42px;
   @include mq(md) {
-    margin-top: rem(30);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.voice-items--page-voice {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 42px;
+  @include mq(md) {
+    column-gap: 42px;
+    row-gap: 75px;
     grid-template-columns: repeat(2, 1fr);
   }
 }

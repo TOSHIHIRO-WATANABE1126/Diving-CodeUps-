@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.ordered-list {
+  list-style-type: decimal;
+  padding-left: 23px;
+}
+
+.ordered-list div {
+  padding-left: 0;
+}
+
+.ordered-list__item {
+  font-size: 16px;
+  font-family: $base-font-family;
+  color: $black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.ordered-list__item strong {
+  padding-right: 3px;
+  font-size: 16px;
+  font-family: $base-font-family;
+  color: $black;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+}

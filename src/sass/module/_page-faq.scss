@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.page-blog {
+.page-faq {
   position: relative;
 }
 
-.page-blog::before {
+.page-faq::before {
   content: "";
   position: absolute;
   top: -25px;
@@ -24,34 +24,26 @@
   }
 }
 
-.page-blog__inner {
-  max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-inline: auto;
+.page-faq__inner {
+}
+
+.page-faq__content {
+  margin-top: 52px;
   @include mq(md) {
-    padding-left: 35px;
+    margin-top: 150px;
   }
 }
 
-.page-blog__wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 80px;
+.page-faq__items {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: 40px;
   @include mq(md) {
-    flex-direction: row;
-    column-gap: 80px;
-    row-gap: 0;
+    grid-template-columns: repeat(1, 700px);
+    gap: 35px;
   }
 }
 
-.page-blog__main {
-}
-
-.page-blog__main--single {
-  max-width: 700px;
-}
-
-.page-blog__side {
-  max-width: 294px;
+.page-faq__item {
 }
