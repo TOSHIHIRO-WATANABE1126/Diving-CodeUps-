@@ -7,8 +7,64 @@
   }
 }
 
+.top-footer--page-campaign {
+  margin-top: 95px;
+  @include mq(md) {
+    margin-top: 160px;
+  }
+}
+
+.top-footer--page-about {
+  margin-top: 95px;
+  @include mq(md) {
+    margin-top: 151px;
+  }
+}
+
 .top-footer--page-contact {
   margin-top: 104px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-price {
+  margin-top: 95px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-faq {
+  margin-top: 95px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-contact {
+  margin-top: 150px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-sitemap {
+  margin-top: 96px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-privacy {
+  margin-top: 104px;
+  @include mq(md) {
+    margin-top: 157px;
+  }
+}
+
+.top-footer--page-terms {
+  margin-top: 99px;
   @include mq(md) {
     margin-top: 157px;
   }

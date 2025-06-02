@@ -9,10 +9,22 @@
   color: $black;
   font-size: rem(32);
   line-height: 1.25;
-  text-transform: capitalize;
   @include mq(md) {
     font-size: rem(40);
     line-height: 1;
+  }
+}
+
+.section-title__main::first-letter {
+  text-transform: uppercase;
+  color: $green;
+}
+
+.section-title__main--contact {
+  font-size: 80px;
+  line-height: 1;
+  @include mq(md) {
+    font-size: 80px;
   }
 }
 
@@ -21,10 +33,6 @@
   @include mq(md) {
     font-size: 80px;
   }
-}
-
-.section-title__main::first-letter {
-  color: $green;
 }
 
 .section-title__main--white {
@@ -46,6 +54,10 @@
   @include mq(md) {
     margin-top: rem(8);
   }
+}
+
+.section-title__sub--contact {
+  margin-top: 0;
 }
 
 .section-title__sub--under-page {

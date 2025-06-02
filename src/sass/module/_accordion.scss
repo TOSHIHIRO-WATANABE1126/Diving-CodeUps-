@@ -21,6 +21,9 @@
   width: 28px;
   height: 2px;
   background-color: $white;
+  @include mq(md) {
+    right: 42px;
+  }
 }
 
 .accordion__title::before {
@@ -46,11 +49,11 @@
 
 .accordion__content {
   // display: none;
-  padding: 20px 16px 17px 15px;
+  padding: 20px 16px 24px 15px;
   border: 1px solid $green;
   @include mq(md) {
     margin-top: 18px;
-    padding: 40px 40px 40px 40px;
+    padding: 40px 40px 36px 40px;
   }
 }
 

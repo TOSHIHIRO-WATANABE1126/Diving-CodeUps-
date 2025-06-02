@@ -38,10 +38,10 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
-  gap: 40px;
+  gap: 42px;
   @include mq(md) {
     grid-template-columns: repeat(1, 700px);
-    gap: 35px;
+    gap: 43px;
   }
 }
 

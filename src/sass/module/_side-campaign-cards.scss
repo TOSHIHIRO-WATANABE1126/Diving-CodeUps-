@@ -1,10 +1,13 @@
 @use "global" as *;
 
 .side-campaign-cards {
-  // padding-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
-  row-gap: 29px;
+  row-gap: 22px;
+}
+
+.side-campaign-cards--single {
+  row-gap: 48px;
 }
 
 .side-campaign-cards__card {

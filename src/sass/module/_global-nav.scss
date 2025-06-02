@@ -44,9 +44,9 @@
 }
 
 .global-nav__item--sitemap:nth-of-type(3) {
-  padding-left: 24px;
+  padding-left: 14px;
   @include mq(md) {
-    padding-left: 65px;
+    padding-left: 0;
   }
 }
 
@@ -59,9 +59,9 @@
 }
 
 .global-nav__item--sitemap:nth-of-type(4) {
-  padding-left: 24px;
+  padding-left: 14px;
   @include mq(md) {
-    padding-left: 90px;
+    padding-left: 0;
   }
 }
 

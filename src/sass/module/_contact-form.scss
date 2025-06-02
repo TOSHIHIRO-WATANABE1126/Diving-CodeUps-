@@ -21,19 +21,20 @@
   flex-direction: column;
   gap: 24px;
   @include mq(md) {
-    gap: 55px;
+    gap: 40px;
   }
 }
 
 .contact-form__item {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   padding-bottom: 24px;
   border-bottom: 1px solid $green;
   @include mq(md) {
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 40px;
   }
 
   [type="checkbox"] {
@@ -52,7 +53,7 @@
 
   select {
     border: 1px solid $green;
-    padding: 11px 9px 15px 8px;
+    padding: 11px 9px 8px 8px;
     max-width: 480px;
     width: 100%;
     font-size: 12px;
@@ -65,6 +66,9 @@
     background-repeat: no-repeat; /* 繰り返さない */
     background-position: center right 9px; /* 縦は中央、横は右から9px内側 */
     background-size: 12px 12px; /* 画像サイズ（幅 高さ） */
+    @include mq(md) {
+      padding: 2px 9px 6px 8px;
+    }
   }
 
   textarea {

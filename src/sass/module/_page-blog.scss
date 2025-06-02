@@ -40,7 +40,7 @@
   row-gap: 80px;
   @include mq(md) {
     flex-direction: row;
-    column-gap: 80px;
+    column-gap: 63px;
     row-gap: 0;
   }
 }
