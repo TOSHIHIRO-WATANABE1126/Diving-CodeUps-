@@ -23,14 +23,14 @@
 }
 
 .price-items__title--page-price {
-  padding: 8px 0;
+  padding: rem(8) 0;
   text-align: center;
   background-color: $green;
   color: $white;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: rem(8);
   @include mq(md) {
     flex-direction: column-reverse;
   }
@@ -89,17 +89,17 @@
   display: flex;
   align-items: center;
   @include mq(md) {
-    padding: 16px 0;
+    padding: rem(16) 0;
   }
 }
 
 .price-items__grid--page-price dt {
-  padding: 2px 0;
+  padding: rem(2) 0;
   text-align: center;
   justify-content: center;
   @include mq(md) {
     justify-content: start;
-    padding-left: 12px;
+    padding-left: rem(12);
   }
 }
 
@@ -112,8 +112,8 @@
 
 .price-items__grid--page-price dd {
   justify-content: flex-end;
-  padding-right: 10px;
+  padding-right: rem(10);
   @include mq(md) {
-    padding-right: 16px;
+    padding-right: rem(16);
   }
 }

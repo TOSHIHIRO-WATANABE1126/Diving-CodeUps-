@@ -1,71 +1,92 @@
 @use "global" as *;
 
 .top-footer {
-  margin-top: 104px;
+  margin-top: rem(104);
   @include mq(md) {
-    margin-top: 160px;
+    margin-top: rem(160);
   }
 }
 
 .top-footer--page-campaign {
-  margin-top: 95px;
+  margin-top: rem(105);
   @include mq(md) {
-    margin-top: 160px;
+    margin-top: rem(160);
   }
 }
 
 .top-footer--page-about {
-  margin-top: 95px;
+  margin-top: rem(105);
   @include mq(md) {
-    margin-top: 151px;
+    margin-top: rem(151);
+  }
+}
+
+.top-footer--page-info {
+  margin-top: rem(104);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+
+.top-footer--page-blog {
+  margin-top: rem(104);
+  @include mq(md) {
+    margin-top: rem(150);
   }
 }
 
 .top-footer--page-contact {
-  margin-top: 104px;
+  margin-top: rem(104);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }
 
 .top-footer--page-price {
-  margin-top: 95px;
+  margin-top: rem(95);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }
 
 .top-footer--page-faq {
-  margin-top: 95px;
+  margin-top: rem(104);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }
 
 .top-footer--page-contact {
-  margin-top: 150px;
+  margin-top: rem(150);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
+  }
+}
+
+.top-footer--page-thanks {
+  margin-top: rem(142);
+  @include mq(md) {
+    margin-top: rem(127);
   }
 }
 
 .top-footer--page-sitemap {
-  margin-top: 96px;
+  margin-top: rem(107);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }
 
 .top-footer--page-privacy {
-  margin-top: 104px;
+  margin-top: rem(104);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }
 
 .top-footer--page-terms {
-  margin-top: 99px;
+  margin-top: rem(105);
   @include mq(md) {
-    margin-top: 157px;
+    margin-top: rem(157);
   }
 }

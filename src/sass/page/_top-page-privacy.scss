@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .top-page-privacy {
-  margin-top: 48px;
+  margin-top: rem(48);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
   }
 }

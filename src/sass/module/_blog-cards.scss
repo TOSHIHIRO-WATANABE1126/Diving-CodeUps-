@@ -9,15 +9,11 @@
   }
 }
 
-.blog-cards--under-page {
-  row-gap: 40px;
+.blog-cards--page-blog {
+  row-gap: rem(37);
   @include mq(md) {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 45px;
-    row-gap: 86px;
+    grid-template-columns: repeat(2, rem(333));
+    column-gap: rem(45);
+    row-gap: rem(86);
   }
-}
-
-.blog-cards__card--under-page {
-  max-width: 333px;
 }

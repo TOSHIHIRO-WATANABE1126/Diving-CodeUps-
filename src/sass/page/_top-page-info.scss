@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .top-page-info {
-  margin-top: 108px;
+  margin-top: rem(120);
   @include mq(md) {
-    margin-top: 148px;
+    margin-top: rem(147);
   }
 }

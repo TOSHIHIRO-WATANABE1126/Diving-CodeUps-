@@ -31,7 +31,7 @@
 .global-nav__item--sitemap:nth-of-type(2) {
   padding-left: 0px;
   @include mq(md) {
-    padding-left: 41px;
+    padding-left: rem(41);
   }
 }
 
@@ -44,7 +44,7 @@
 }
 
 .global-nav__item--sitemap:nth-of-type(3) {
-  padding-left: 14px;
+  padding-left: rem(14);
   @include mq(md) {
     padding-left: 0;
   }
@@ -59,7 +59,7 @@
 }
 
 .global-nav__item--sitemap:nth-of-type(4) {
-  padding-left: 14px;
+  padding-left: rem(14);
   @include mq(md) {
     padding-left: 0;
   }

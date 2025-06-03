@@ -11,49 +11,49 @@
 .page-price::before {
   content: "";
   position: absolute;
-  top: -25px;
-  left: 15px;
-  width: 120px;
-  height: 55px;
+  top: rem(-25);
+  left: rem(15);
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -150px;
+    width: rem(301);
+    height: rem(138);
+    top: rem(-150);
     left: calc(50% - min(48vw, 670px));
   }
 }
 
 .page-price--page-price::before {
-  top: -22px;
-  left: 15px;
+  top: rem(-22);
+  left: rem(15);
   @include mq(md) {
-    top: -70px;
+    top: rem(-70);
     left: calc(50% - min(48vw, 623px));
   }
 }
 
 .page-price__items {
-  margin-top: 57px;
-  gap: 39px;
+  margin-top: rem(57);
+  gap: rem(39);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
     width: 45.555%;
   }
 }
 
 .page-price__items--page-price {
-  gap: 34px;
-  margin-top: 49px;
+  gap: rem(34);
+  margin-top: rem(49);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
     max-width: 700px;
     width: 100%;
     margin-inline: auto;
-    gap: 82px;
+    gap: rem(82);
   }
 }

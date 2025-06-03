@@ -9,33 +9,40 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 120px;
-  height: 55px;
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -70px;
-    left: 100px;
+    width: rem(301);
+    height: rem(138);
+    top: rem(-70);
+    left: rem(100);
   }
 }
 
 .page-voice__inner.inner {
-  padding-left: 19px;
-  padding-right: 10px;
+  padding-left: rem(19);
+  padding-right: rem(10);
 }
 
 .page-voice__tab {
-  margin-top: 52px;
+  margin-top: rem(52);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
   }
 }
 
-.page-voice__pagenation {
-  margin-top: 76px;
+.page-voice__pagination {
+  margin-top: rem(76);
+}
+
+.page-voice__pagination--page-voice {
+  margin-top: rem(83);
+  @include mq(md) {
+    margin-top: rem(74);
+  }
 }

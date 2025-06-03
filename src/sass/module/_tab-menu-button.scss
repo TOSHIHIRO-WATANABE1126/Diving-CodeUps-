@@ -2,13 +2,13 @@
 
 .tab-menu-button {
   cursor: pointer;
-  padding: 9px 10px;
+  padding: rem(9) rem(10);
   background-color: $light-green;
   box-shadow: rem(2) rem(2) rem(4) 0 rgba(0, 0, 0, 0.25);
   text-align: center;
   transition: all 0.3s ease;
   @include mq(md) {
-    padding: 12px 10px;
+    padding: rem(12) rem(10);
   }
 }
 
@@ -22,18 +22,18 @@
 
 .tab-menu-button span {
   display: inline-block;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: $base-font-family;
   color: $green;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   @include mq(md) {
-    font-size: 24px;
+    font-size: rem(24);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: rem(8);
   }
 }
 
@@ -53,8 +53,8 @@
     background-size: contain;
     background-position: center;
     display: inline-block;
-    width: 64px;
-    height: 64px;
+    width: rem(64);
+    height: rem(64);
   }
 }
 

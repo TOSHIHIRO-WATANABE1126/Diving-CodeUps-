@@ -2,7 +2,7 @@
 
 .ordered-list {
   list-style-type: decimal;
-  padding-left: 23px;
+  padding-left: rem(23);
 }
 
 .ordered-list div {
@@ -10,7 +10,7 @@
 }
 
 .ordered-list__item {
-  font-size: 16px;
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;
@@ -19,8 +19,8 @@
 }
 
 .ordered-list__item strong {
-  padding-right: 3px;
-  font-size: 16px;
+  padding-right: rem(3);
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;

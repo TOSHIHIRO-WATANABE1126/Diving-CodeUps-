@@ -43,7 +43,7 @@
   grid-template-rows: auto 1fr;
   padding: rem(16) rem(16) rem(27) rem(16);
   @include mq(md) {
-    padding: 24px 24px 40px 24px;
+    padding: rem(24) rem(24) rem(40) rem(24);
   }
 }
 
@@ -68,9 +68,9 @@
   font-weight: 500;
   line-height: 1.5;
   @include mq(md) {
-    font-size: 24px;
+    font-size: rem(24);
     margin-top: 0;
-    padding-bottom: 2px;
+    padding-bottom: rem(2);
   }
 }
 
@@ -95,7 +95,7 @@
   align-items: end;
   justify-content: space-evenly;
   @include mq(md) {
-    margin-top: 8px;
+    margin-top: rem(8);
   }
 }
 
@@ -135,8 +135,8 @@
 
 .page-campaign-card__text {
   @include mq(md) {
-    margin-top: 24px;
-    font-size: 16px;
+    margin-top: rem(24);
+    font-size: rem(16);
     font-family: $base-font-family;
     color: $black;
     font-style: normal;
@@ -147,7 +147,7 @@
 
 .page-campaign-card__sub-text {
   @include mq(md) {
-    margin-top: 32px;
+    margin-top: rem(32);
     text-align: center;
   }
 }
@@ -155,7 +155,7 @@
 .page-campaign-card__sub-text p {
   @include mq(md) {
     font-family: Lato;
-    font-size: 16px;
+    font-size: rem(16);
     font-weight: $bold;
     color: $green;
     line-height: 1.12;
@@ -164,16 +164,16 @@
 
 .page-campaign-card__sub-text p:not(:first-child) {
   @include mq(md) {
-    margin-top: 7px;
+    margin-top: rem(7);
   }
 }
 
 .page-campaign-card__button {
   @include mq(md) {
-    margin-top: 41px;
+    margin-top: rem(41);
     text-align: center;
     @include mq(md) {
-      margin-top: 15px;
+      margin-top: rem(15);
     }
   }
 }

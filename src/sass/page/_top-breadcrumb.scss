@@ -1,11 +1,5 @@
 @use "global" as *;
 
 .top-breadcrumb {
-  margin-top: 5px;
+  margin-top: rem(5);
 }
-
-// .top-breadcrumb--404 {
-//   @include mq(md) {
-//     margin-top: 15px;
-//   }
-// }

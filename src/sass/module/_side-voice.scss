@@ -6,14 +6,14 @@
 .side-voice__title {
   display: flex;
   align-items: center;
-  column-gap: 8px;
-  padding-left: 24px;
+  column-gap: rem(8);
+  padding-left: rem(24);
   position: relative;
 }
 
 .side-voice__title h3 {
   font-family: $base-font-family;
-  font-size: 24px;
+  font-size: rem(24);
   color: $black;
   font-style: normal;
   font-weight: 400;
@@ -29,14 +29,14 @@
   display: inline-block;
   top: 0;
   left: 0;
-  width: 50px;
-  height: 50px;
+  width: rem(50);
+  height: rem(50);
 }
 
 .side-voice__title::after {
   position: absolute;
   content: "";
-  width: 6px;
+  width: rem(6);
   height: 100%;
   background-color: $green;
   top: 0;
@@ -47,8 +47,8 @@
 }
 
 .side-voice__image {
-  margin-top: 25px;
-  max-width: 294px;
+  margin-top: rem(25);
+  max-width: rem(294);
   aspect-ratio: 294 / 218;
 }
 
@@ -59,11 +59,11 @@
 }
 
 .side-voice__text-body {
-  margin-top: 11px;
+  margin-top: rem(11);
 }
 
 .side-voice__tag {
-  font-size: 12px;
+  font-size: rem(12);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;
@@ -72,7 +72,7 @@
 }
 
 .side-voice__sub-title {
-  font-size: 24px;
+  font-size: rem(24);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;
@@ -81,6 +81,6 @@
 }
 
 .side-voice__button {
-  margin-top: 44px;
+  margin-top: rem(44);
   text-align: center;
 }

@@ -4,19 +4,19 @@
 }
 
 .breadcrumb__inner.inner {
-  padding-left: 19px;
+  padding-left: rem(19);
 }
 
 .breadcrumb__items {
   display: flex;
-  column-gap: 8px;
+  column-gap: rem(8);
 }
 
 .breadcrumb__item {
 }
 
 .breadcrumb__link {
-  font-size: 14px;
+  font-size: rem(14);
   font-family: $base-font-family;
   font-weight: 400;
   color: $black;

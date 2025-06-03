@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .top-gallery {
-  margin-top: 40px;
+  margin-top: rem(40);
   @include mq(md) {
-    margin-top: 126px;
+    margin-top: rem(126);
   }
 }

@@ -7,19 +7,19 @@
 .page-about::before {
   content: "";
   position: absolute;
-  top: -25px;
-  left: 15px;
-  width: 120px;
-  height: 55px;
+  top: rem(-25);
+  left: calc(50% - min(46vw, 372px));
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -150px;
-    left: calc(50% - min(48vw, 670px));
+    width: rem(301);
+    height: rem(138);
+    top: rem(-146);
+    left: calc(50% - min(48vw, 620px));
   }
 }

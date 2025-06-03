@@ -4,11 +4,11 @@
 }
 
 .accordion__title {
-  padding: 16px;
+  padding: rem(16);
   background-color: $green;
   position: relative;
   @include mq(md) {
-    padding: 28px 40px 20px 40px;
+    padding: rem(28) rem(40) rem(20) rem(40);
   }
 }
 
@@ -17,48 +17,47 @@
   position: absolute;
   content: "";
   top: 50%;
-  right: 16px;
-  width: 28px;
-  height: 2px;
+  right: rem(16);
+  width: rem(28);
+  height: rem(2);
   background-color: $white;
   @include mq(md) {
-    right: 42px;
+    right: rem(42);
   }
 }
 
 .accordion__title::before {
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
   transition: transform 0.3s;
 }
 
 .accordion__title.is-open::before {
-  transform: rotate(0);
+  transform: rotate(90deg);
 }
 
 .accordion__title h3 {
-  font-size: 16px;
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $white;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   @include mq(md) {
-    font-size: 20px;
+    font-size: rem(20);
   }
 }
 
 .accordion__content {
-  // display: none;
-  padding: 20px 16px 24px 15px;
+  padding: rem(20) rem(16) rem(17) rem(15);
   border: 1px solid $green;
   @include mq(md) {
-    margin-top: 18px;
-    padding: 40px 40px 36px 40px;
+    margin-top: rem(18);
+    padding: rem(36) rem(40) rem(36) rem(40);
   }
 }
 
 .accordion__content p {
-  font-size: 16px;
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;

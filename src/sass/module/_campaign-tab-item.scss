@@ -1,16 +1,17 @@
 @use "global" as *;
 
 .campaign-tab-item {
-  width: 162px;
-  height: 34px;
+  width: rem(162);
+  height: rem(34);
   border: 1px solid $green;
-  font-size: 14px;
+  font-size: rem(14);
   font-family: $base-font-family;
   color: $green;
   font-style: normal;
   font-weight: 400;
   line-height: 1.57;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .campaign-tab-item a {
@@ -25,4 +26,15 @@
 .campaign-tab-item--active {
   color: $white;
   background-color: $green;
+}
+
+.campaign-tab-item:hover {
+  color: $white;
+  background-color: $green;
+  opacity: 1;
+}
+
+.campaign-tab-item:hover a {
+  color: $white;
+  opacity: 1;
 }

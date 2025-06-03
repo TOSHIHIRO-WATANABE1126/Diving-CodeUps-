@@ -3,7 +3,7 @@
 .voice-items {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 42px;
+  gap: rem(42);
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -12,10 +12,10 @@
 .voice-items--page-voice {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 42px;
+  gap: rem(42);
   @include mq(md) {
-    column-gap: 42px;
-    row-gap: 75px;
+    column-gap: rem(42);
+    row-gap: rem(75);
     grid-template-columns: repeat(2, 1fr);
   }
 }

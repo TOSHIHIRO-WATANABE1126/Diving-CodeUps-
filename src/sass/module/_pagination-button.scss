@@ -1,0 +1,98 @@
+@use "global" as *;
+
+.pagination-button {
+}
+
+.pagination-button__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: rem(40);
+}
+
+.pagination-button__wrapper--single {
+  column-gap: rem(80);
+}
+
+.pagination-button__items {
+  display: flex;
+  column-gap: rem(12);
+}
+
+.pagination-button__item {
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $green;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.pagination-button__item a {
+  width: 100%;
+  height: inherit;
+  font-family: Lato;
+  font-size: rem(16);
+  color: $green;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-button__item--current {
+  background-color: $green;
+  opacity: 1;
+}
+.pagination-button__item--current a {
+  color: $white;
+}
+
+.pagination-button__item:hover {
+  background-color: $green;
+  opacity: 1;
+}
+.pagination-button__item:hover a {
+  color: $white;
+  opacity: 1;
+}
+
+.pagination-button__item--left-arrow,
+.pagination-button__item--right-arrow {
+  position: relative;
+}
+
+.pagination-button__item--left-arrow::before {
+  content: "";
+  position: absolute;
+  top: 32%;
+  left: 41%;
+  transform: translate(-50%, -50%);
+  width: rem(13);
+  height: rem(13);
+  border-left: 1px solid $green;
+  border-top: 1px solid $green;
+  transform: rotate(-45deg);
+}
+
+.pagination-button__item--left-arrow:hover::before {
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+}
+
+.pagination-button__item--right-arrow::before {
+  content: "";
+  position: absolute;
+  top: 32%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  width: rem(13);
+  height: rem(13);
+  border-left: 1px solid $green;
+  border-top: 1px solid $green;
+  transform: rotate(135deg);
+}
+
+.pagination-button__item--right-arrow:hover::before {
+  border-left: 1px solid $white;
+  border-top: 1px solid $white;
+  opacity: 1;
+}

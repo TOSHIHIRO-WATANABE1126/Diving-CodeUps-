@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .tab-menu-buttons {
-  max-width: 500px;
+  max-width: rem(500);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: clamp(20px, 6vw, 90px);

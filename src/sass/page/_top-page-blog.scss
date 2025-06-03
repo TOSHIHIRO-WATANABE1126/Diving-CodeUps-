@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .top-page-blog {
-  margin-top: 51px;
+  margin-top: rem(51);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
   }
 }
 
 .top-page-blog--single {
-  margin-top: 47px;
+  margin-top: rem(47);
   @include mq(md) {
-    margin-top: 144px;
+    margin-top: rem(144);
   }
 }

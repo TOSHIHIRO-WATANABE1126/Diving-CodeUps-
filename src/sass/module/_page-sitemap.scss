@@ -7,10 +7,10 @@
 .page-sitemap::before {
   content: "";
   position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 120px;
-  height: 55px;
+  top: rem(15);
+  left: rem(15);
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;

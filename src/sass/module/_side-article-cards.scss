@@ -3,7 +3,7 @@
 .side-article-cards {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: rem(22);
 }
 
 .side-article-cards__card {

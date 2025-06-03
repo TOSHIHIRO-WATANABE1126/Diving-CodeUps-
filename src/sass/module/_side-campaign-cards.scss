@@ -3,11 +3,14 @@
 .side-campaign-cards {
   display: flex;
   flex-direction: column;
-  row-gap: 22px;
+  row-gap: rem(42);
+  @include mq(md) {
+    row-gap: rem(34);
+  }
 }
 
 .side-campaign-cards--single {
-  row-gap: 48px;
+  row-gap: rem(48);
 }
 
 .side-campaign-cards__card {

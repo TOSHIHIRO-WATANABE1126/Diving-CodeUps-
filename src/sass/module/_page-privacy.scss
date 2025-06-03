@@ -7,19 +7,19 @@
 .page-privacy::before {
   content: "";
   position: absolute;
-  top: -25px;
-  left: 15px;
-  width: 120px;
-  height: 55px;
+  top: rem(-25);
+  left: rem(15);
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -72px;
+    width: rem(301);
+    height: rem(138);
+    top: rem(-72);
     left: calc(50% - min(48vw, 610px));
   }
 }
@@ -28,7 +28,7 @@
 }
 
 .page-privacy__content {
-  max-width: 800px;
+  max-width: rem(800);
   width: 100%;
   margin-inline: auto;
 }
@@ -41,17 +41,17 @@
   font-weight: 500;
   line-height: normal;
   @include mq(md) {
-    font-size: 32px;
+    font-size: rem(32);
   }
 }
 
 .privacy-policy__items {
-  margin-top: 43px;
+  margin-top: rem(43);
   display: flex;
   flex-direction: column;
-  gap: 31px;
+  gap: rem(31);
   @include mq(md) {
-    margin-top: 38px;
+    margin-top: rem(38);
   }
 }
 
@@ -62,7 +62,7 @@
 }
 
 .privacy-policy__text {
-  font-size: 16px;
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $black;
   font-style: normal;

@@ -11,14 +11,14 @@
 .panel__content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 22px 24px 25px;
+  gap: rem(8);
+  padding: rem(22) rem(24) rem(25);
   border: 1px solid $green;
   @include mq(md) {
-    padding: 22px 24px 25px;
+    padding: rem(22) rem(24) rem(25);
     flex-direction: row;
     align-items: center;
-    gap: 62px;
+    gap: rem(62);
   }
 }
 
@@ -29,9 +29,9 @@
 }
 
 .panel__title {
-  padding-bottom: 8px;
+  padding-bottom: rem(8);
   border-bottom: 1px solid $green;
-  font-size: 24px;
+  font-size: rem(24);
   font-family: $base-font-family;
   color: $black;
   font-weight: $bold;
@@ -39,8 +39,8 @@
 }
 
 .panel__text {
-  margin-top: 5px;
-  font-size: 16px;
+  margin-top: rem(5);
+  font-size: rem(16);
   font-family: $base-font-family;
   color: $black1;
   font-style: normal;

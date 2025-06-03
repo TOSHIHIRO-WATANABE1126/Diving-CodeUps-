@@ -1,15 +1,15 @@
 @use "global" as *;
 
 .campaign-tab-items {
-  display: flex;
-  flex-wrap: wrap;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(162px, 1fr));
-  column-gap: 21px;
-  row-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, rem(162));
+  column-gap: rem(21);
+  row-gap: rem(15);
+  justify-content: center;
   @include mq(md) {
-    // grid-template-columns: repeat(4, 1fr);
-    column-gap: 34px;
+    grid-template-columns: repeat(4, rem(162));
+    column-gap: rem(34);
+    justify-content: start;
   }
 }
 

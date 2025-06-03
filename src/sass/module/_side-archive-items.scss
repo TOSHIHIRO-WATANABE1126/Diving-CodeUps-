@@ -3,7 +3,7 @@
 .side-archive-items {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: rem(4);
 }
 
 .side-archive-items__item {

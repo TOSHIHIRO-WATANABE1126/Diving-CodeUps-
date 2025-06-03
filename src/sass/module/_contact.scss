@@ -117,7 +117,7 @@
 }
 
 .contact__text-block {
-  margin-top: 36px;
+  margin-top: rem(36);
   text-align: center;
   @include mq(md) {
     margin-top: 0;
@@ -148,8 +148,71 @@
 }
 
 .contact__button {
-  margin-top: rem(40);
+  margin-top: rem(30);
   @include mq(md) {
-    margin-top: rem(42);
+    margin-top: rem(20);
+  }
+}
+
+.contact__button--page-campaign {
+  @include mq(md) {
+    margin-top: rem(44);
+  }
+}
+
+.contact__button--page-about {
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}
+
+.contact__button--page-info {
+  @include mq(md) {
+    margin-top: rem(31);
+  }
+}
+
+.contact__button--page-blog {
+  @include mq(md) {
+    margin-top: rem(36);
+  }
+}
+
+.contact__button--page-voice {
+  @include mq(md) {
+    margin-top: rem(34);
+  }
+}
+
+.contact__button--page-price {
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact__button--page-faq {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact__button--page-sitemap {
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact__button--page-privacy {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.contact__button--page-terms {
+  margin-top: rem(34);
+  @include mq(md) {
+    margin-top: rem(40);
   }
 }

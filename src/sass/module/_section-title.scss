@@ -21,17 +21,17 @@
 }
 
 .section-title__main--contact {
-  font-size: 80px;
+  font-size: rem(80);
   line-height: 1;
   @include mq(md) {
-    font-size: 80px;
+    font-size: rem(80);
   }
 }
 
 .section-title__main--under-page {
-  font-size: 80px;
+  font-size: rem(80);
   @include mq(md) {
-    font-size: 80px;
+    font-size: rem(80);
   }
 }
 
@@ -61,9 +61,9 @@
 }
 
 .section-title__sub--under-page {
-  margin-top: -15px;
+  margin-top: rem(-15);
   @include mq(md) {
-    margin-top: -5px;
+    margin-top: rem(-5);
   }
 }
 

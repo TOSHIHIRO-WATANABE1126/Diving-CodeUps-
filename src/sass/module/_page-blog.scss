@@ -7,40 +7,40 @@
 .page-blog::before {
   content: "";
   position: absolute;
-  top: -25px;
-  left: 15px;
-  width: 120px;
-  height: 55px;
+  top: rem(-24);
+  left: calc(50% - min(46vw, 372px));
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -72px;
-    left: calc(50% - min(48vw, 610px));
+    width: rem(301);
+    height: rem(138);
+    top: rem(-67);
+    left: calc(50% - min(48vw, 620px));
   }
 }
 
 .page-blog__inner {
-  max-width: 1140px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: rem(1140);
+  padding-left: rem(20);
+  padding-right: rem(20);
   margin-inline: auto;
   @include mq(md) {
-    padding-left: 35px;
+    padding-left: rem(35);
   }
 }
 
 .page-blog__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 80px;
+  row-gap: rem(80);
   @include mq(md) {
     flex-direction: row;
-    column-gap: 63px;
+    column-gap: rem(63);
     row-gap: 0;
   }
 }
@@ -49,9 +49,9 @@
 }
 
 .page-blog__main--single {
-  max-width: 700px;
+  max-width: rem(700);
 }
 
 .page-blog__side {
-  max-width: 294px;
+  max-width: rem(294);
 }

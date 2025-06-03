@@ -4,48 +4,48 @@
   position: relative;
 }
 
-.page-campaign::after {
+.page-campaign::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 120px;
-  height: 55px;
+  top: rem(-25);
+  left: calc(50% - min(46vw, 372px));
+  width: rem(120);
+  height: rem(55);
   background-image: url("../images/common/voice-illustration1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
   @include mq(md) {
-    width: 301px;
-    height: 138px;
-    top: -70px;
-    left: 100px;
+    width: rem(301);
+    height: rem(138);
+    top: rem(-70);
+    left: calc(50% - min(48vw, 620px));
   }
 }
 
 .page-campaign__inner.inner {
-  padding-left: 19px;
-  padding-right: 10px;
+  padding-left: rem(19);
+  padding-right: rem(10);
 }
 
 .page-campaign__tab {
-  margin-top: 52px;
+  margin-top: rem(52);
   @include mq(md) {
-    margin-top: 150px;
+    margin-top: rem(150);
   }
 }
 
 .page-campaign__cards {
-  margin-top: 40px;
+  margin-top: rem(40);
   @include mq(md) {
-    margin-top: 34px;
+    margin-top: rem(34);
   }
 }
 
 .page-campaign__pagenation {
-  margin-top: 76px;
+  margin-top: rem(76);
   @include mq(md) {
-    margin-top: 89px;
+    margin-top: rem(89);
   }
 }

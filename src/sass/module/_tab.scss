@@ -7,9 +7,9 @@
 }
 
 .tab__content {
-  margin-top: 19px;
+  margin-top: rem(19);
   @include mq(md) {
-    margin-top: 30px;
+    margin-top: rem(30);
   }
 }
 

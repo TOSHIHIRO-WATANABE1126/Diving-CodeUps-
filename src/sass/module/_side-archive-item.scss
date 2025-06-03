@@ -4,8 +4,8 @@
 }
 
 .side-archive-item__toggle {
-  padding-left: 32px;
-  font-size: 24px;
+  padding-left: rem(32);
+  font-size: rem(24);
   font-family: $base-font-family;
   font-style: normal;
   color: $green;
@@ -17,10 +17,10 @@
 .side-archive-item__toggle::before {
   position: absolute;
   content: "";
-  top: 11px;
+  top: rem(11);
   left: 0;
-  width: 21px;
-  height: 21px;
+  width: rem(21);
+  height: rem(21);
   background-color: $green;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   transform-origin: center;
@@ -34,21 +34,21 @@
 
 .side-archive-item__list {
   display: none;
-  margin-left: 30px;
+  margin-left: rem(30);
 }
 
 .side-archive-item__list li {
   position: relative;
-  padding-left: 26px;
+  padding-left: rem(26);
 }
 
 .side-archive-item__list li::before {
   position: absolute;
   content: "";
-  top: 11px;
+  top: rem(11);
   left: 0;
-  width: 21px;
-  height: 21px;
+  width: rem(21);
+  height: rem(21);
   background-color: $green;
   clip-path: polygon(0 0, 100% 0, 50% 100%);
   transform-origin: center;
@@ -57,11 +57,11 @@
 }
 
 .side-archive-item__list li:not(:first-child) {
-  margin-top: 6px;
+  margin-top: rem(6);
 }
 
 .side-archive-item__list li a {
-  font-size: 24px;
+  font-size: rem(24);
   font-family: $base-font-family;
   font-style: normal;
   color: $green;
