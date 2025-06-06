@@ -24,16 +24,7 @@
   }
 }
 
-.page-campaign__inner.inner {
-  padding-left: rem(19);
-  padding-right: rem(10);
-}
-
 .page-campaign__tab {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
 }
 
 .page-campaign__cards {
@@ -43,9 +34,9 @@
   }
 }
 
-.page-campaign__pagenation {
-  margin-top: rem(76);
+.page-campaign__pagination {
+  margin-top: rem(65);
   @include mq(md) {
-    margin-top: rem(89);
+    margin-top: rem(80);
   }
 }

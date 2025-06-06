@@ -4,10 +4,6 @@
   position: relative;
 }
 
-.page-price--page-price {
-  position: relative;
-}
-
 .page-price::before {
   content: "";
   position: absolute;
@@ -23,37 +19,28 @@
   @include mq(md) {
     width: rem(301);
     height: rem(138);
-    top: rem(-150);
-    left: calc(50% - min(48vw, 670px));
+    top: rem(-70);
+    left: calc(50% - min(48vw, 620px));
   }
 }
 
-.page-price--page-price::before {
-  top: rem(-22);
-  left: rem(15);
-  @include mq(md) {
-    top: rem(-70);
-    left: calc(50% - min(48vw, 623px));
-  }
+.page-price__inner.inner {
+  max-width: rem(750);
 }
 
 .page-price__items {
-  margin-top: rem(57);
   gap: rem(39);
   @include mq(md) {
-    margin-top: rem(150);
-    width: 45.555%;
+    gap: rem(87);
   }
 }
 
 .page-price__items--page-price {
   gap: rem(34);
-  margin-top: rem(49);
+
   @include mq(md) {
-    margin-top: rem(150);
-    max-width: 700px;
     width: 100%;
     margin-inline: auto;
-    gap: rem(82);
+    gap: rem(87);
   }
 }

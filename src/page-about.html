@@ -241,9 +241,13 @@
       <!-- page-about -->
       <div class="page-about top-page-about">
         <div class="page-about__inner inner">
-          <div class="about__content about__content--under-page">
-            <div class="about__images">
-              <div class="about__first-image about__first-image--under-page">
+          <div
+            class="page-about__content about-content about-content--page-about"
+          >
+            <div class="about-content__images">
+              <div
+                class="about-content__first-image about-content__first-image--page-about"
+              >
                 <picture>
                   <source
                     srcset="./assets/images/common/about1-pc.jpg"
@@ -255,7 +259,9 @@
                   />
                 </picture>
               </div>
-              <div class="about__second-image about__second-image--under-page">
+              <div
+                class="about-content__second-image about-content__second-image--page-about"
+              >
                 <picture>
                   <source srcset="./assets/images/common/about2-pc.jpg" />
                   <img
@@ -264,85 +270,85 @@
                   />
                 </picture>
               </div>
-              <div class="about__title--under-page u-mobile">
+              <div class="about-content__title--under-page u-mobile">
                 <h2>Dive into<br />the Ocean</h2>
               </div>
             </div>
-            <div class="about__text-body">
-              <div class="about__message u-desktop">
+            <div class="about-content__text-body">
+              <div class="about-content__message u-desktop">
                 <p>
                   Dive into<br />
                   the Ocean
                 </p>
               </div>
-              <div class="about__text-block about__text-block--under-page">
-                <p class="about__text">
+              <div
+                class="about-content__text-block about-content__text-block--page-about"
+              >
+                <p class="about-content__text">
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
                 </p>
               </div>
             </div>
           </div>
+          <section class="page-about__gallery gallery top-gallery">
+            <div class="gallery__title section-title">
+              <p class="section-title__main">gallery</p>
+              <h2 class="section-title__sub">フォト</h2>
+            </div>
+            <ul class="gallery__items">
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery1.jpg"
+                  alt="海中に、たくさんの赤い魚が泳いでいる様子"
+                />
+              </li>
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery2.jpg"
+                  alt="透き通った青い海に、２から３台のボートが浮かんでいる様子"
+                />
+              </li>
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery3.jpg"
+                  alt="透き通った青い海に、２匹の魚が泳いでいる様子"
+                />
+              </li>
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery4.jpg"
+                  alt="海中に、黄色い魚が一匹、手前で泳いでいる様子"
+                />
+              </li>
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery5.jpg"
+                  alt="ダイビングで撮影された海中の美しい景色 水中写真ギャラリー"
+                />
+              </li>
+              <li class="gallery__item js-gallery">
+                <img
+                  src="./assets/images/common/gallery6.jpg"
+                  alt="海中で色鮮やかな熱帯魚の群れが泳ぐ様子"
+                />
+              </li>
+            </ul>
+            <div class="modal">
+              <!-- モーダル本体 -->
+              <div class="modal__wrapper">
+                <div class="modal__layer"></div>
+                <div class="modal__container">
+                  <!-- モーダル内のコンテンツ -->
+                  <div class="modal__content"></div>
+                  <!-- / モーダル内のコンテンツ -->
+                </div>
+              </div>
+              <!-- / モーダル本体 -->
+            </div>
+          </section>
         </div>
       </div>
-      <section class="gallery top-gallery">
-        <div class="gallery__inner inner">
-          <div class="gallery__title section-title">
-            <p class="section-title__main">gallery</p>
-            <h2 class="section-title__sub">フォト</h2>
-          </div>
-          <ul class="gallery__items">
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery1.jpg"
-                alt="海中に、たくさんの赤い魚が泳いでいる様子"
-              />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery2.jpg"
-                alt="透き通った青い海に、２から３台のボートが浮かんでいる様子"
-              />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery3.jpg"
-                alt="透き通った青い海に、２匹の魚が泳いでいる様子"
-              />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery4.jpg"
-                alt="海中に、黄色い魚が一匹、手前で泳いでいる様子"
-              />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery5.jpg"
-                alt="ダイビングで撮影された海中の美しい景色 水中写真ギャラリー"
-              />
-            </li>
-            <li class="gallery__item js-gallery">
-              <img
-                src="./assets/images/common/gallery6.jpg"
-                alt="海中で色鮮やかな熱帯魚の群れが泳ぐ様子"
-              />
-            </li>
-          </ul>
-          <div class="modal">
-            <!-- モーダル本体 -->
-            <div class="modal__wrapper">
-              <div class="modal__layer"></div>
-              <div class="modal__container">
-                <!-- モーダル内のコンテンツ -->
-                <div class="modal__content"></div>
-                <!-- / モーダル内のコンテンツ -->
-              </div>
-            </div>
-            <!-- / モーダル本体 -->
-          </div>
-        </div>
-      </section>
 
       <!-- contact -->
       <section class="contact top-contact--campaign">

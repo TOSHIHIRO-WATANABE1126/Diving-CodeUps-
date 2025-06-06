@@ -117,7 +117,7 @@
 }
 
 .contact__text-block {
-  margin-top: rem(36);
+  margin-top: rem(40);
   text-align: center;
   @include mq(md) {
     margin-top: 0;
@@ -125,6 +125,10 @@
     padding-top: rem(25);
     padding-right: rem(30);
   }
+}
+
+.contact__text-block--page-price {
+  margin-top: 28px;
 }
 
 .contact-title__main.section-title__main {
@@ -139,7 +143,7 @@
 }
 
 .contact__description {
-  margin-top: rem(8);
+  margin-top: 8px;
   color: $green;
   text-align: center;
   font-family: "Noto Sans JP";
@@ -148,13 +152,14 @@
 }
 
 .contact__button {
-  margin-top: rem(30);
+  margin-top: rem(41);
   @include mq(md) {
-    margin-top: rem(20);
+    margin-top: rem(27);
   }
 }
 
 .contact__button--page-campaign {
+  margin-top: rem(30);
   @include mq(md) {
     margin-top: rem(44);
   }

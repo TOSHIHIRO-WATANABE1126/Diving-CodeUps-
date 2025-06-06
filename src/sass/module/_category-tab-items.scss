@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.category-tab-items {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: rem(21);
+  row-gap: rem(15);
+  justify-content: start;
+  @include mq(md) {
+    column-gap: rem(34);
+  }
+}
+
+.category-tab-items__item {
+  width: rem(162);
+  height: rem(34);
+}

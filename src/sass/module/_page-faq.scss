@@ -24,14 +24,11 @@
   }
 }
 
-.page-faq__inner {
+.page-faq__inner.inner {
+  max-width: rem(750);
 }
 
 .page-faq__content {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
 }
 
 .page-faq__items {
@@ -40,7 +37,6 @@
   justify-content: center;
   gap: rem(40);
   @include mq(md) {
-    grid-template-columns: repeat(1, rem(700));
     gap: rem(43);
   }
 }

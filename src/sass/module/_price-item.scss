@@ -1,0 +1,125 @@
+@use "global" as *;
+
+.price-item {
+  display: grid;
+}
+
+.price-item--page-price {
+  @include mq(md) {
+    grid-template-columns: 28.6% 1fr;
+  }
+}
+
+.price-item__title {
+  padding-bottom: rem(4);
+  border-bottom: rem(1) solid $green;
+  color: $black;
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: 1.5;
+}
+
+.price-item__title--page-price {
+  padding: rem(8) 0;
+  text-align: center;
+  background-color: $green;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(8);
+  @include mq(md) {
+    flex-direction: column-reverse;
+  }
+}
+
+.price-item__title--page-price::before {
+  content: "";
+  display: inline-block;
+  width: rem(24);
+  height: rem(24);
+  background-image: url("../images/common/whale-to-right.png");
+  filter: brightness(0) saturate(100%) invert(87%) sepia(89%) saturate(1%)
+    hue-rotate(268deg) brightness(109%) contrast(97%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include mq("md") {
+    width: rem(64);
+    height: rem(64);
+  }
+}
+
+.price-item__grid {
+  display: grid;
+  grid-template-columns: 69% 1fr;
+  @include mq(md) {
+    grid-template-columns: 68% 1fr;
+  }
+}
+
+.price-item__grid--page-price {
+  grid-auto-rows: 1fr;
+  border: 1px solid $green;
+  @include mq(md) {
+  }
+}
+
+.price-item__grid dt,
+.price-item__grid dd {
+  margin-top: rem(8);
+  color: $black;
+  font-family: "Noto Sans JP";
+  font-size: rem(14);
+  line-height: 1.714;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.price-item__grid--page-price dt,
+.price-item__grid--page-price dd {
+  margin-top: 0;
+  align-items: stretch;
+  font-size: rem(16);
+  display: flex;
+  align-items: center;
+  @include mq(md) {
+    padding: rem(16) 0;
+  }
+}
+
+.price-item__grid--page-price dt {
+  padding: rem(2) 0;
+  text-align: center;
+  justify-content: center;
+  @include mq(md) {
+    justify-content: start;
+    text-align: left;
+    padding-left: rem(12);
+    padding-right: rem(12);
+  }
+}
+
+.price-item__grid--page-price dt:not(:first-child),
+.price-item__grid--page-price dt:not(:first-child) + dd {
+  border-top: 1px solid $green;
+}
+
+.price-item__grid dt {
+}
+
+.price-item__grid dd {
+  text-align: right;
+}
+
+.price-item__grid--page-price dd {
+  justify-content: flex-end;
+  padding-right: rem(14);
+  border-left: 1px solid $green;
+  @include mq(md) {
+    padding-right: rem(16);
+    padding-left: rem(16);
+  }
+}

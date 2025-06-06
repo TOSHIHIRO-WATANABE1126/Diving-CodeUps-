@@ -21,14 +21,15 @@
 .pagination-button__item {
   width: rem(38);
   height: rem(38);
-  border: 1px solid $green;
-  transition: background-color 0.3s ease, color 0.3s ease,
-    border-color 0.3s ease;
+  // border: 1px solid $green;
+  // transition: background-color 0.3s ease, color 0.3s ease,
+  //   border-color 0.3s ease;
 }
 
 .pagination-button__item a {
   width: 100%;
   height: inherit;
+  border: 1px solid $green;
   font-family: Lato;
   font-size: rem(16);
   color: $green;
@@ -36,21 +37,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .pagination-button__item--current {
-  background-color: $green;
-  opacity: 1;
+  // background-color: $green;
+  // opacity: 1;
 }
 .pagination-button__item--current a {
+  background-color: $green;
+  opacity: 1;
   color: $white;
 }
 
 .pagination-button__item:hover {
-  background-color: $green;
-  opacity: 1;
+  // background-color: $green;
+  // opacity: 1;
 }
 .pagination-button__item:hover a {
+  background-color: $green;
   color: $white;
   opacity: 1;
 }
@@ -60,37 +66,30 @@
   position: relative;
 }
 
-.pagination-button__item--left-arrow::before {
-  content: "";
-  position: absolute;
-  top: 32%;
-  left: 41%;
-  transform: translate(-50%, -50%);
-  width: rem(13);
-  height: rem(13);
-  border-left: 1px solid $green;
-  border-top: 1px solid $green;
-  transform: rotate(-45deg);
-}
-
-.pagination-button__item--left-arrow:hover::before {
-  border-left: 1px solid $white;
-  border-top: 1px solid $white;
-}
-
+.pagination-button__item--left-arrow::before,
 .pagination-button__item--right-arrow::before {
   content: "";
   position: absolute;
   top: 32%;
-  left: 24%;
   transform: translate(-50%, -50%);
   width: rem(13);
   height: rem(13);
   border-left: 1px solid $green;
   border-top: 1px solid $green;
+  cursor: pointer;
+}
+
+.pagination-button__item--right-arrow::before {
+  left: 24%;
   transform: rotate(135deg);
 }
 
+.pagination-button__item--left-arrow::before {
+  left: 41%;
+  transform: rotate(-45deg);
+}
+
+.pagination-button__item--left-arrow:hover::before,
 .pagination-button__item--right-arrow:hover::before {
   border-left: 1px solid $white;
   border-top: 1px solid $white;

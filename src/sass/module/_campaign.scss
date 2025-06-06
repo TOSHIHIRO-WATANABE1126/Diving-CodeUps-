@@ -15,6 +15,10 @@
   }
 }
 
+.campaign__cards {
+  padding-bottom: 0.5rem;
+}
+
 .campaign__swiper-button {
   display: none;
   @include mq(md) {
@@ -47,15 +51,19 @@
 }
 
 .campaign__swiper-button-prev {
-  background-image: url(../images/common/prev-icon.png);
-  top: 0;
-  right: 340px;
+  @include mq(md) {
+    background-image: url(../images/common/prev-icon.png);
+    top: 0;
+    right: calc(50% - min(46vw, rem(380)));
+  }
 }
 
 .campaign__swiper-button-next {
-  background-image: url(../images/common/next-icon.png);
-  top: 0;
-  right: rem(180);
+  @include mq(md) {
+    background-image: url(../images/common/next-icon.png);
+    top: 0;
+    right: calc(50% - min(46vw, rem(540)));
+  }
 }
 
 .campaign__button {
