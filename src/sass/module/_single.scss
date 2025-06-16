@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.single {
+  position: relative;
+}
+
+.single::before {
+  content: "";
+  position: absolute;
+  top: rem(-24);
+  left: calc(50% - min(46vw, 372px));
+  width: rem(120);
+  height: rem(55);
+  background-image: url("../images/common/voice-illustration1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+    top: rem(-67);
+    left: calc(50% - min(48vw, 620px));
+  }
+}
+
+.single__inner {
+}
+
+.single__contents {
+}

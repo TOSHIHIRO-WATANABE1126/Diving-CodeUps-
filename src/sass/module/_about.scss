@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.about::before {
+.about::after {
   @include mq(md) {
     background-image: url(../images/common/about-illustration.png);
     background-repeat: no-repeat;
@@ -21,7 +21,6 @@
 
 .about__content {
   margin-top: rem(52);
-  position: relative;
   @include mq(md) {
     margin-top: rem(120);
   }

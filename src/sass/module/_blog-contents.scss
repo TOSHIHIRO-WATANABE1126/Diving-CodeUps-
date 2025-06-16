@@ -1,0 +1,18 @@
+@use "global" as *;
+
+.blog-contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(80);
+  @include mq(md) {
+    flex-direction: row;
+    column-gap: rem(72);
+    row-gap: 0;
+  }
+}
+
+.blog-contents__main {
+}
+
+.blog-contents__side {
+}

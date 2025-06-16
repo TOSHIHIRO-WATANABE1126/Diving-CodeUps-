@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.tab-menu-button {
+.menu-button {
   cursor: pointer;
   padding: rem(9) rem(10);
   background-color: $light-green;
@@ -12,15 +12,19 @@
   }
 }
 
-.tab-menu-button:hover {
+.menu-button:hover {
   background-color: $green;
 }
 
-.tab-menu-button.is-active {
+.menu-button:hover span {
+  color: $white;
+}
+
+.menu-button.is-active {
   background-color: $green;
 }
 
-.tab-menu-button span {
+.menu-button span {
   display: inline-block;
   font-size: rem(14);
   font-family: $base-font-family;
@@ -28,6 +32,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: all 0.3s ease;
   @include mq(md) {
     font-size: rem(24);
     display: flex;
@@ -37,15 +42,11 @@
   }
 }
 
-.tab-menu-button span:hover {
+.menu-button.is-active span {
   color: $white;
 }
 
-.tab-menu-button.is-active span {
-  color: $white;
-}
-
-.tab-menu-button span::before {
+.menu-button span::before {
   @include mq(md) {
     content: "";
     background-image: url("../images/common/whale-to-right.png");
@@ -55,30 +56,31 @@
     display: inline-block;
     width: rem(64);
     height: rem(64);
+    transition: all 0.3s ease;
   }
 }
 
-.tab-menu-button span:hover::before {
+.menu-button:hover span::before {
   @include mq(md) {
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
       hue-rotate(124deg) brightness(107%) contrast(100%);
   }
 }
 
-.tab-menu-button.is-active span::before {
+.menu-button.is-active span::before {
   @include mq(md) {
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(0%)
       hue-rotate(124deg) brightness(107%) contrast(100%);
   }
 }
 
-.tab-menu-button:nth-child(2) span::before {
+.menu-button:nth-child(2) span::before {
   @include mq(md) {
     background-image: url("../images/common/whale-to-left.png");
   }
 }
 
-.tab-menu-button:nth-child(3) span::before {
+.menu-button:nth-child(3) span::before {
   @include mq(md) {
     background-image: url("../images/common/fish-deco.png");
   }

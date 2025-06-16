@@ -1,21 +1,21 @@
 @use "global" as *;
 
 .top-contact {
-  margin-top: rem(80);
+  margin-top: rem(83);
+  @include mq(md) {
+    margin-top: rem(135);
+  }
+}
+
+.top-contact--under-page {
+  margin-top: rem(105);
   @include mq(md) {
     margin-top: rem(140);
   }
 }
 
-.top-contact--campaign {
-  margin-top: rem(103);
-  @include mq(md) {
-    margin-top: rem(140);
-  }
-}
-
-.top-contact--page-privacy {
-  margin-top: rem(107);
+.top-contact--page-terms {
+  margin-top: rem(110);
   @include mq(md) {
     margin-top: rem(140);
   }

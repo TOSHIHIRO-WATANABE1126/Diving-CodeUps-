@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.contact-inquiry {
+  text-align: center;
+  @include mq(md) {
+    padding-top: rem(25);
+    padding-right: rem(30);
+  }
+}
+
+.contact-inquiry--page-price {
+  margin-top: 28px;
+}
+
+.contact-inquiry__title.section-title__main {
+  font-size: rem(80);
+}
+
+.contact-inquiry__sub.section-title__sub {
+  margin-top: rem(-16);
+  @include mq(md) {
+    margin-top: rem(-7);
+  }
+}
+
+.contact-inquiry__description {
+  margin-top: 8px;
+  color: $green;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: rem(14);
+  line-height: 1.28571;
+}
+
+.contact-inquiry__button {
+  margin-top: rem(41);
+  @include mq(md) {
+    margin-top: rem(27);
+  }
+}
+
+.contact-inquiry__button--page-campaign {
+  margin-top: rem(30);
+  @include mq(md) {
+    margin-top: rem(44);
+  }
+}
+
+.contact-inquiry__button--page-about {
+  @include mq(md) {
+    margin-top: rem(30);
+  }
+}
+
+.contact-inquiry__button--page-info {
+  @include mq(md) {
+    margin-top: rem(31);
+  }
+}
+
+.contact-inquiry__button--page-blog {
+  @include mq(md) {
+    margin-top: rem(36);
+  }
+}
+
+.contact-inquiry__button--page-voice {
+  @include mq(md) {
+    margin-top: rem(34);
+  }
+}
+
+.contact-inquiry__button--page-price {
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact-inquiry__button--page-faq {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact-inquiry__button--page-sitemap {
+  @include mq(md) {
+    margin-top: rem(37);
+  }
+}
+
+.contact-inquiry__button--page-privacy {
+  margin-top: rem(37);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}
+
+.contact-inquiry__button--page-terms {
+  margin-top: rem(34);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

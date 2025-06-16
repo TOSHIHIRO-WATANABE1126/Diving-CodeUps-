@@ -1,71 +1,57 @@
 @use "global" as *;
 
-.global-nav {
-}
-
-.global-nav__items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas:
-    "a b"
-    "c d";
-  @include mq(md) {
-    display: flex;
-  }
-}
-
-.global-nav__item {
+.nav-item {
   @include mq(md) {
     width: 25%;
   }
 }
 
-.global-nav__item:nth-of-type(1) {
+.nav-item:nth-of-type(1) {
   grid-area: a;
 }
 
-.global-nav__item:nth-of-type(2) {
+.nav-item:nth-of-type(2) {
   grid-area: c;
 }
 
-.global-nav__item--sitemap:nth-of-type(2) {
+.nav-item--sitemap:nth-of-type(2) {
   padding-left: 0px;
   @include mq(md) {
     padding-left: rem(41);
   }
 }
 
-.global-nav__item:nth-of-type(3) {
+.nav-item:nth-of-type(3) {
   grid-area: b;
 }
 
-.global-nav__item--pl:nth-of-type(3) {
+.nav-item--padding-left:nth-of-type(3) {
   padding-left: rem(14);
 }
 
-.global-nav__item--sitemap:nth-of-type(3) {
+.nav-item--sitemap:nth-of-type(3) {
   padding-left: rem(14);
   @include mq(md) {
     padding-left: 0;
   }
 }
 
-.global-nav__item:nth-of-type(4) {
+.nav-item:nth-of-type(4) {
   grid-area: d;
 }
 
-.global-nav__item--pl:nth-of-type(4) {
+.nav-item--pl:nth-of-type(4) {
   padding-left: rem(14);
 }
 
-.global-nav__item--sitemap:nth-of-type(4) {
+.nav-item--sitemap:nth-of-type(4) {
   padding-left: rem(14);
   @include mq(md) {
     padding-left: 0;
   }
 }
 
-.global-nav__link {
+.nav-item__link {
   margin-top: rem(24);
   padding-left: rem(20);
   display: block;
@@ -76,23 +62,23 @@
   line-height: 1.12;
 }
 
-.global-nav__link--sitemap {
+.nav-item__link--sitemap {
   color: $black;
 }
 
-.global-nav__link--bold {
+.nav-item__link--bold {
   margin-top: rem(40);
   font-weight: $bold;
   position: relative;
 }
 
-.global-nav__link--sitemap-bold {
+.nav-item__link--sitemap-bold {
   margin-top: rem(40);
   font-weight: $bold;
   position: relative;
 }
 
-.global-nav__link--bold::before {
+.nav-item__link--bold::before {
   position: absolute;
   z-index: 5;
   content: "";
@@ -106,7 +92,7 @@
   background-size: cover;
 }
 
-.global-nav__link--sitemap-bold::before {
+.nav-item__link--sitemap-bold::before {
   position: absolute;
   z-index: 5;
   content: "";

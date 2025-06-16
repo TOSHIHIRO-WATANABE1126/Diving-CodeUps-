@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.about-images {
+  position: relative;
+}
+
+.about-images__dog-image {
+  width: 37%;
+}
+
+.about-images__fish-image {
+  width: 81%;
+}

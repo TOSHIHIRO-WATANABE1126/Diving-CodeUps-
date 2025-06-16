@@ -4,7 +4,7 @@
   position: relative;
 }
 
-.page-voice::after {
+.page-voice::before {
   content: "";
   position: absolute;
   top: 0;
@@ -24,16 +24,18 @@
   }
 }
 
-.page-voice__inner.inner {
-  padding-left: rem(19);
-  padding-right: rem(10);
+.page-voice__inner {
 }
 
-.page-voice__tab {
+.page-voice__category-tabs {
   margin-top: rem(52);
   @include mq(md) {
     margin-top: rem(150);
   }
+}
+
+.page-voice__cards {
+  margin-top: rem(41);
 }
 
 .page-voice__pagination {

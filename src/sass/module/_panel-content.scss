@@ -1,14 +1,14 @@
 @use "global" as *;
 
-.panel {
+.panel-content {
   display: none;
 }
 
-.panel.is-active {
+.panel-content.is-active {
   display: block;
 }
 
-.panel__content {
+.panel-content__wrapper {
   display: flex;
   flex-direction: column;
   gap: rem(8);
@@ -22,13 +22,13 @@
   }
 }
 
-.panel__text-body {
+.panel-content__text-body {
   @include mq(md) {
     width: 46.5%;
   }
 }
 
-.panel__title {
+.panel-content__title {
   padding-bottom: rem(8);
   border-bottom: 1px solid $green;
   font-size: rem(24);
@@ -38,7 +38,7 @@
   line-height: 1;
 }
 
-.panel__text {
+.panel-content__text {
   margin-top: rem(5);
   font-size: rem(16);
   font-family: $base-font-family;
@@ -48,7 +48,7 @@
   line-height: 1.5;
 }
 
-.panel__image {
+.panel-content__image {
   @include mq(md) {
     width: 48%;
   }

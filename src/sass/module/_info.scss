@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.info {
+  padding-top: rem(80);
+  padding-bottom: rem(84);
+  background-color: $light-green;
+  @include mq(md) {
+    padding-top: rem(100);
+    padding-bottom: rem(100);
+  }
+}
+
+.info__inner {
+}
+
+.info__title {
+}
+
+.info__content {
+  margin-top: rem(28);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
+}

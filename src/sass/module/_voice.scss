@@ -32,14 +32,14 @@
   }
 }
 
-.voice__items {
+.voice__cards {
   margin-top: rem(45);
   @include mq(md) {
     margin-top: rem(30);
   }
 }
 
-.voice__items--page-voice {
+.voice__cards--page-voice {
   margin-top: 40px;
   @include mq(md) {
     margin-top: 40px;

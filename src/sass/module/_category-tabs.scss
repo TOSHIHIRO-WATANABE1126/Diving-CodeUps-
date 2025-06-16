@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.category-tab-items {
+.category-tabs {
   display: flex;
   flex-wrap: wrap;
   column-gap: rem(21);
@@ -11,7 +11,7 @@
   }
 }
 
-.category-tab-items__item {
+.category-tabs__item {
   width: rem(162);
   height: rem(34);
 }

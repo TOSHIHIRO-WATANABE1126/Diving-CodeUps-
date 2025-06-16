@@ -29,18 +29,4 @@
 }
 
 .page-price__items {
-  gap: rem(39);
-  @include mq(md) {
-    gap: rem(87);
-  }
-}
-
-.page-price__items--page-price {
-  gap: rem(34);
-
-  @include mq(md) {
-    width: 100%;
-    margin-inline: auto;
-    gap: rem(87);
-  }
 }

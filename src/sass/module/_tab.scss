@@ -6,12 +6,9 @@
 .tab__menu {
 }
 
-.tab__content {
-  margin-top: rem(19);
+.tab__panel {
+  margin-top: rem(17);
   @include mq(md) {
     margin-top: rem(30);
   }
-}
-
-.tab__panel {
 }

@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: rem(10);
+  @include mq(md) {
+    row-gap: rem(20);
+  }
+}
+
+.menu-buttons__item {
+  width: rem(102);
+  height: rem(60);
+  @include mq(md) {
+    width: rem(300);
+    height: rem(90);
+  }
+}

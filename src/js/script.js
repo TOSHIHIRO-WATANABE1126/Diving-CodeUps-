@@ -1,4 +1,3 @@
-
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
 
@@ -128,7 +127,7 @@ $(function () {
  //モーダルウィンドウ
   $(document).ready(function () {
     // 変数に要素を格納
-    var trigger = $(".js-gallery"),
+    var trigger = $(".js-gallery-photo"),
       wrapper = $(".modal__wrapper"),
       layer = $(".modal__layer"),
       container = $(".modal__container"),
@@ -190,16 +189,19 @@ $(function () {
 // });
 
 $(document).ready(function () {
-  $('.tab-menu-button').click(function () {
+  $('.menu-button, .menu-button span').click(function (e) {
+    e.stopPropagation(); // イベントの伝播を停止
+    const $button = $(this).hasClass('menu-button') ? $(this) : $(this).closest('.menu-button');
+    
     // すべてのタブボタンから is-active を外す
-    $('.tab-menu-button').removeClass('is-active');
+    $('.menu-button').removeClass('is-active');
     // クリックされたタブボタンに is-active をつける
-    $(this).addClass('is-active');
+    $button.addClass('is-active');
 
     // すべてのタブ内容から is-active を外す
-    $('.panel').removeClass('is-active');
+    $('.info-content--page-info').removeClass('is-active');
     // クリックされたボタンの data-tab の値を取得
-    let target = $(this).data('tab');
+    let target = $button.data('tab');
     // そのIDのコンテンツに is-active をつける
     $('#' + target).addClass('is-active');
   });
@@ -246,20 +248,23 @@ $(document).ready(function () {
 
   // checkbox
 $(function(){
-  // ページが読み込まれたらこの中の処理を実行する（jQueryの準備完了イベント）
-  
-  $('.check').on('click', function() {
-    // クラス「check」が付いたチェックボックスがクリックされた時に動く
-
-    if ($(this).prop('checked')) {
-      // もしクリックされたチェックボックスが「チェックされた状態」なら
-
-      $('.check').prop('checked', false);
-      // いったん、すべての「check」クラスのチェックを外す（リセット）
-
-      $(this).prop('checked', true);
-      // そのあとで、自分自身だけチェックを入れる
-      // → 結果として、チェックボックスが1つしか選ばれない状態になる（ラジオボタン風の動き）
+  // チェックボックスの処理を一度だけ実行するようにする
+  $('.form-item__checkbox').on('click', function(e) {
+    const $checkbox = $(this).find('.form-item__checkbox-input');
+    const isChecked = $checkbox.prop('checked');
+    
+    // すべてのチェックボックスのチェックを外す
+    $('.form-item__checkbox-input').prop('checked', false);
+    
+    // クリックされたチェックボックスだけをチェックする
+    if (!isChecked) {
+      $checkbox.prop('checked', true);
+    }
+    
+    // チェックボックスの状態に応じてスタイルを更新
+    $('.form-item__checkbox-text').removeClass('is-checked');
+    if (!isChecked) {
+      $(this).find('.form-item__checkbox-text').addClass('is-checked');
     }
   });
 });

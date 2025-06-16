@@ -1,0 +1,6 @@
+@use "global" as *;
+
+.side-contents {
+  display: grid;
+  row-gap: rem(85);
+}

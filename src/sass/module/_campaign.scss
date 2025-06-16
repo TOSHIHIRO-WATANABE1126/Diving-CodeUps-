@@ -2,8 +2,11 @@
 
 .campaign {
   padding-bottom: rem(4);
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+}
+
+.campaign__inner {
 }
 
 .campaign__swiper {

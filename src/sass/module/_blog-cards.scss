@@ -10,10 +10,23 @@
 }
 
 .blog-cards--page-blog {
-  row-gap: rem(37);
+  row-gap: rem(40);
   @include mq(md) {
-    grid-template-columns: repeat(2, rem(333));
-    column-gap: rem(45);
-    row-gap: rem(86);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: rem(84);
   }
+}
+
+.blog-cards--side {
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(25);
+  @include mq(md) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.blog-cards__item {
+}
+
+.blog-cards__item--page-blog {
+  width: rem(333);
 }

@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.nav-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "a b"
+    "c d";
+  @include mq(md) {
+    display: flex;
+  }
+}
+
+.nav-items__item {
+}

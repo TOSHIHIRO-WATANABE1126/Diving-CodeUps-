@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.accordions {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  gap: rem(40);
+  @include mq(md) {
+    gap: rem(43);
+  }
+}
+
+.accordions__item {
+}

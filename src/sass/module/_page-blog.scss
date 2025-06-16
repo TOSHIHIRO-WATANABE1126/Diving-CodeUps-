@@ -24,34 +24,14 @@
   }
 }
 
-.page-blog__inner {
+.page-blog__inner.inner {
   max-width: rem(1140);
   padding-left: rem(20);
   padding-right: rem(20);
-  margin-inline: auto;
   @include mq(md) {
     padding-left: rem(35);
   }
 }
 
-.page-blog__wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: rem(80);
-  @include mq(md) {
-    flex-direction: row;
-    column-gap: rem(63);
-    row-gap: 0;
-  }
-}
-
-.page-blog__main {
-}
-
-.page-blog__main--single {
-  max-width: rem(700);
-}
-
-.page-blog__side {
-  max-width: rem(294);
+.page-blog__contents {
 }

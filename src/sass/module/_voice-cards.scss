@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.voice-items {
+.voice-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: rem(42);
@@ -9,13 +9,13 @@
   }
 }
 
-.voice-items--page-voice {
+.voice-cards--page-voice {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: rem(42);
+  gap: rem(43);
   @include mq(md) {
     column-gap: rem(42);
-    row-gap: rem(75);
+    row-gap: rem(80);
     grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -107,90 +107,90 @@
 
       <div class="header__drawer drawer js-drawer u-mobile">
         <div class="drawer__inner">
-          <nav class="drawer__nav global-nav">
-            <ul class="global-nav__items">
-              <li class="global-nav__item">
+          <nav class="drawer__nav nav">
+            <ul class="nav__items nav-items">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-campaign.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >キャンペーン</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >ライセンス取得</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >貸切体験ダイビング</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >ナイトダイビング</a
                 >
                 <a
                   href="page-about.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >私たちについて</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-info.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >ダイビング情報</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >ライセンス講習</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >体験ダイビング</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >ファンダイビング</a
                 >
                 <a
                   href="page-blog.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >ブログ</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-voice.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >お客様の声</a
                 >
                 <a
                   href="page-price.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >料金一覧</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >ライセンス講習</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >体験ダイビング</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >ファンダイビング</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-faq.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >よくある質問</a
                 >
                 <a
                   href="page-privacy.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >プライバシー<br class="u-mobile" />ポリシー</a
                 >
                 <a
                   href="page-terms.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >利用規約</a
                 >
                 <a
                   href="page-contact.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >お問い合わせ</a
                 >
               </li>
@@ -242,215 +242,211 @@
       <section class="page-campaign top-page-campaign">
         <div class="page-campaign__inner inner">
           <!-- カテゴリータブ -->
-          <div class="page-campaign__tab category-tab">
-            <ul class="category-tab__items category-tab-items">
-              <li
-                class="category-tab-items__item category-tab-item category-tab-item--active"
-              >
-                <a href="#"> ALL</a>
-              </li>
-              <li class="category-tab-items__item category-tab-item">
-                <a href="#">ライセンス講習</a>
-              </li>
-              <li class="category-tab-items__item category-tab-item">
-                <a href="#">ファンダイビング</a>
-              </li>
-              <li class="category-tab-items__item category-tab-item">
-                <a href="#">体験ダイビング</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="page-campaign__tabs category-tabs">
+            <li class="category-tabs__item category-tab category-tab--active">
+              <a class="category-tab__link" href="#"> ALL</a>
+            </li>
+            <li class="category-tabs__item category-tab">
+              <a class="category-tab__link" href="#">ライセンス講習</a>
+            </li>
+            <li class="category-tabs__item category-tab">
+              <a class="category-tab__link" href="#">ファンダイビング</a>
+            </li>
+            <li class="category-tabs__item category-tab">
+              <a class="category-tab__link" href="#">体験ダイビング</a>
+            </li>
+          </ul>
           <!-- カード -->
           <ul
             class="page-campaign__cards campaign-cards campaign-cards--page-campaign"
           >
             <li
-              class="campaign-cards__card campaign-cards__card--page-campaign campaign-card"
+              class="campaign-cards__item campaign-cards__item--page-campaign campaign-card"
             >
-              <div class="campaign-card__link">
-                <div
-                  class="campaign-card__image campaign-card__image--page-campaign"
+              <div
+                class="campaign-card__image campaign-card__image--page-campaign"
+              >
+                <img
+                  src="./assets/images/common/campaign1-sp.jpg"
+                  alt="海中に、たくさんの種類の魚が泳いでいる様子"
+                />
+              </div>
+              <div
+                class="campaign-card__text-body campaign-card__text-body--page-campaign"
+              >
+                <span class="campaign-card__label">ライセンス講習</span>
+                <p
+                  class="campaign-card__title campaign-card__title--page-campaign"
                 >
-                  <img
-                    src="./assets/images/common/campaign1-sp.jpg"
-                    alt="海中に、たくさんの種類の魚が泳いでいる様子"
-                  />
+                  ライセンス取得
+                </p>
+                <p
+                  class="campaign-card__description campaign-card__description--page-campaign"
+                >
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="campaign-card__price">
+                  <p class="campaign-card__list-price">¥56,000</p>
+                  <p class="campaign-card__current-price">¥46,000</p>
                 </div>
-                <div
-                  class="campaign-card__text-body campaign-card__text-body--page-campaign"
-                >
-                  <span class="campaign-card__label">ライセンス講習</span>
-                  <p
-                    class="campaign-card__title campaign-card__title--page-campaign"
-                  >
-                    ライセンス取得
+                <div class="campaign-card__under-block u-desktop">
+                  <p class="campaign-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <p
-                    class="campaign-card__description campaign-card__description--page-campaign"
+                  <div
+                    class="campaign-card__sub-text campaign-card__sub-text--page-campaign"
                   >
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="campaign-card__price">
-                    <p class="campaign-card__list-price">¥56,000</p>
-                    <p class="campaign-card__current-price">¥46,000</p>
+                    <p>2023/6/1-9/30</p>
+                    <p>ご予約・お問い合わせはコチラ</p>
                   </div>
-                  <div class="campaign-card__under-text-block u-desktop">
-                    <div class="campaign-card__text">
-                      <p>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                    <div class="campaign-card__sub-text">
-                      <p>2023/6/1-9/30</p>
-                      <p>ご予約・お問い合わせはコチラ</p>
-                    </div>
-                    <div class="campaign-card__button">
-                      <a href="page-contact.html" class="button"
-                        >Contact us<span class="button__arrow-right"></span
-                      ></a>
-                    </div>
+                  <div
+                    class="campaign-card__button campaign-card__button--page-campaign"
+                  >
+                    <a href="page-contact.html" class="button"
+                      >Contact us<span class="button__arrow-right"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </li>
             <li
-              class="campaign-cards__card campaign-cards__card--page-campaign campaign-card"
+              class="campaign-cards__item campaign-cards__item--page-campaign campaign-card"
             >
-              <div class="campaign-card__link">
-                <div
-                  class="campaign-card__image campaign-card__image--page-campaign"
+              <div
+                class="campaign-card__image campaign-card__image--page-campaign"
+              >
+                <img src="./assets/images/common/campaign2-sp.jpg" alt="" />
+              </div>
+              <div
+                class="campaign-card__text-body campaign-card__text-body--page-campaign"
+              >
+                <span class="campaign-card__label">体験ダイビング</span>
+                <p
+                  class="campaign-card__title campaign-card__title--page-campaign"
                 >
-                  <img src="./assets/images/common/campaign2-sp.jpg" alt="" />
+                  貸切体験ダイビング
+                </p>
+                <p
+                  class="campaign-card__description campaign-card__description--page-campaign"
+                >
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="campaign-card__price">
+                  <p class="campaign-card__list-price">¥24,000</p>
+                  <p class="campaign-card__current-price">¥18,000</p>
                 </div>
-                <div
-                  class="campaign-card__text-body campaign-card__text-body--page-campaign"
-                >
-                  <span class="campaign-card__label">体験ダイビング</span>
-                  <p
-                    class="campaign-card__title campaign-card__title--page-campaign"
-                  >
-                    貸切体験ダイビング
+                <div class="campaign-card__under-block u-desktop">
+                  <p class="campaign-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <p
-                    class="campaign-card__description campaign-card__description--page-campaign"
+                  <div
+                    class="campaign-card__sub-text campaign-card__sub-text--page-campaign"
                   >
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="campaign-card__price">
-                    <p class="campaign-card__list-price">¥24,000</p>
-                    <p class="campaign-card__current-price">¥18,000</p>
+                    <p>2023/6/1-9/30</p>
+                    <p>ご予約・お問い合わせはコチラ</p>
                   </div>
-                  <div class="campaign-card__under-text-block u-desktop">
-                    <div class="campaign-card__text">
-                      <p>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                    <div class="campaign-card__sub-text">
-                      <p>2023/6/1-9/30</p>
-                      <p>ご予約・お問い合わせはコチラ</p>
-                    </div>
-                    <div class="campaign-card__button">
-                      <a href="page-contact.html" class="button"
-                        >Contact us<span class="button__arrow-right"></span
-                      ></a>
-                    </div>
+                  <div
+                    class="campaign-card__button campaign-card__button--page-campaign"
+                  >
+                    <a href="contact.html" class="button"
+                      >Contact us<span class="button__arrow-right"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </li>
             <li
-              class="campaign-cards__card campaign-cards__card--page-campaign campaign-card"
+              class="campaign-cards__item campaign-cards__item--page-campaign campaign-card"
             >
-              <div class="campaign-card__link">
-                <div
-                  class="campaign-card__image campaign-card__image--page-campaign"
+              <div
+                class="campaign-card__image campaign-card__image--page-campaign"
+              >
+                <img src="./assets/images/common/campaign3-sp.jpg" alt="" />
+              </div>
+              <div
+                class="campaign-card__text-body campaign-card__text-body--page-campaign"
+              >
+                <span class="campaign-card__label">体験ダイビング</span>
+                <p
+                  class="campaign-card__title campaign-card__title--page-campaign"
                 >
-                  <img src="./assets/images/common/campaign3-sp.jpg" alt="" />
+                  ナイトダイビング
+                </p>
+                <p
+                  class="campaign-card__description campaign-card__description--page-campaign"
+                >
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="campaign-card__price">
+                  <p class="campaign-card__list-price">¥10,000</p>
+                  <p class="campaign-card__current-price">¥8,000</p>
                 </div>
-                <div
-                  class="campaign-card__text-body campaign-card__text-body--page-campaign"
-                >
-                  <span class="campaign-card__label">体験ダイビング</span>
-                  <p
-                    class="campaign-card__title campaign-card__title--page-campaign"
-                  >
-                    ナイトダイビング
+                <div class="campaign-card__under-block u-desktop">
+                  <p class="campaign-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <p
-                    class="campaign-card__description campaign-card__description--page-campaign"
+                  <div
+                    class="campaign-card__sub-text campaign-card__sub-text--page-campaign"
                   >
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="campaign-card__price">
-                    <p class="campaign-card__list-price">¥10,000</p>
-                    <p class="campaign-card__current-price">¥8,000</p>
+                    <p>2023/6/1-9/30</p>
+                    <p>ご予約・お問い合わせはコチラ</p>
                   </div>
-                  <div class="campaign-card__under-text-block u-desktop">
-                    <div class="campaign-card__text">
-                      <p>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                    <div class="campaign-card__sub-text">
-                      <p>2023/6/1-9/30</p>
-                      <p>ご予約・お問い合わせはコチラ</p>
-                    </div>
-                    <div class="campaign-card__button">
-                      <a href="page-contact.html" class="button"
-                        >Contact us<span class="button__arrow-right"></span
-                      ></a>
-                    </div>
+                  <div
+                    class="campaign-card__button campaign-card__button--page-campaign"
+                  >
+                    <a href="contact.html" class="button"
+                      >Contact us<span class="button__arrow-right"></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </li>
             <li
-              class="campaign-cards__card campaign-cards__card--page-campaign campaign-card"
+              class="campaign-cards__item campaign-cards__item--page-campaign campaign-card"
             >
-              <div class="campaign-card__link">
-                <div
-                  class="campaign-card__image campaign-card__image--page-campaign"
+              <div
+                class="campaign-card__image campaign-card__image--page-campaign"
+              >
+                <img src="./assets/images/common/campaign4-sp.jpg" alt="" />
+              </div>
+              <div
+                class="campaign-card__text-body campaign-card__text-body--page-campaign"
+              >
+                <span class="campaign-card__label">ファンダイビング</span>
+                <p
+                  class="campaign-card__title campaign-card__title--page-campaign"
                 >
-                  <img src="./assets/images/common/campaign4-sp.jpg" alt="" />
+                  貸切ファンダイビング
+                </p>
+                <p
+                  class="campaign-card__description campaign-card__description--page-campaign"
+                >
+                  全部コミコミ(お一人様)
+                </p>
+                <div class="campaign-card__price">
+                  <p class="campaign-card__list-price">¥20,000</p>
+                  <p class="campaign-card__current-price">¥16,000</p>
                 </div>
-                <div
-                  class="campaign-card__text-body campaign-card__text-body--page-campaign"
-                >
-                  <span class="campaign-card__label">ファンダイビング</span>
-                  <p
-                    class="campaign-card__title campaign-card__title--page-campaign"
-                  >
-                    貸切ファンダイビング
+                <div class="campaign-card__under-block u-desktop">
+                  <p class="campaign-card__text">
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
+                    ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                   </p>
-                  <p
-                    class="campaign-card__description campaign-card__description--page-campaign"
+                  <div
+                    class="campaign-card__sub-text campaign-card__sub-text--page-campaign"
                   >
-                    全部コミコミ(お一人様)
-                  </p>
-                  <div class="campaign-card__price">
-                    <p class="campaign-card__list-price">¥20,000</p>
-                    <p class="campaign-card__current-price">¥16,000</p>
+                    <p>2023/6/1-9/30</p>
+                    <p>ご予約・お問い合わせはコチラ</p>
                   </div>
-                  <div class="campaign-card__under-text-block u-desktop">
-                    <div class="campaign-card__text">
-                      <p>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br />
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
-                      </p>
-                    </div>
-                    <div class="campaign-card__sub-text">
-                      <p>2023/6/1-9/30</p>
-                      <p>ご予約・お問い合わせはコチラ</p>
-                    </div>
-                    <div class="campaign-card__button">
-                      <a href="page-contact.html" class="button"
-                        >Contact us<span class="button__arrow-right"></span
-                      ></a>
-                    </div>
+                  <div
+                    class="campaign-card__button campaign-card__button--page-campaign"
+                  >
+                    <a href="contact.html" class="button"
+                      >Contact us<span class="button__arrow-right"></span
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -500,24 +496,24 @@
       </section>
 
       <!-- contact -->
-      <section class="contact top-contact--campaign">
+      <section class="contact top-contact top-contact--under-page">
         <div class="contact__inner inner">
           <div class="contact__content">
-            <div class="contact__info-body">
-              <div class="contact__info-logo">
+            <div class="contact__info contact-info">
+              <div class="contact-info__logo">
                 <img
                   src="./assets/images/common/logo-green.svg"
                   alt="たくさんの魚のイラスト"
                 />
               </div>
-              <div class="contact__info-bottom">
-                <div class="contact__info-text">
+              <div class="contact-info__bottom">
+                <div class="contact-info__text">
                   <p>沖縄県那覇市1-1</p>
                   <p>TEL:0120-000-0000</p>
                   <p>営業時間:8:30-19:00</p>
                   <p>定休日:毎週火曜日</p>
                 </div>
-                <div class="contact__info-map">
+                <div class="contact-info__map">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.4734888827224!2d127.67717481089305!3d26.213800489680988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699dc05bf813%3A0x3501764c0a57176d!2z44CSOTAwLTAwMTUg5rKW57iE55yM6YKj6KaH5biC5LmF6IyC5Zyw77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1739413869416!5m2!1sja!2sjp"
                     width="600"
@@ -530,30 +526,32 @@
                 </div>
               </div>
             </div>
-            <div class="contact__text-block">
-              <div class="contact__title section-title">
-                <h2 class="section-title__main section-title__main--under-page">
+            <div class="contact__inquiry contact-inquiry">
+              <div class="contact-inquiry__title section-title">
+                <h2 class="section-title__main section-title__main--contact">
                   contact
                 </h2>
-                <p class="section-title__sub section-title__sub--under-page">
-                  お問い合わせ
+                <p class="section-title__sub section-title__sub--contact">
+                  お問合せ
                 </p>
               </div>
-              <p class="contact__description">ご予約・お問い合わせはコチラ</p>
-              <div class="contact__button contact__button--page-campaign">
-                <a href="#" class="button"
+              <p class="contact-inquiry__description">
+                ご予約・お問い合わせはコチラ
+              </p>
+              <div class="contact-inquiry__button">
+                <a href="page-contact.html" class="button"
                   >Contact us<span class="button__arrow-right"></span
                 ></a>
               </div>
             </div>
           </div>
         </div>
-        <a href="page-contact.html" class="page-top js-page-top"></a>
+        <a href="#" class="page-top js-page-top"></a>
       </section>
     </main>
 
     <!-- footer -->
-    <footer class="footer top-footer top-footer--page-campaign">
+    <footer class="footer top-footer">
       <div class="footer__inner inner">
         <div class="footer__header">
           <h1 class="footer__logo">
@@ -570,90 +568,86 @@
             </a>
           </div>
         </div>
-        <nav class="footer__nav footer__nav--under-page global-nav">
-          <ul class="global-nav__items">
-            <li class="global-nav__item">
+        <nav class="footer__nav nav">
+          <ul class="nav__items nav-items">
+            <li class="nav__item nav-item">
               <a
                 href="page-campaign.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >キャンペーン</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >ライセンス取得</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >貸切体験ダイビング</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >ナイトダイビング</a
               >
               <a
                 href="page-campaign.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >私たちについて</a
               >
             </li>
-            <li class="global-nav__item">
+            <li class="nav__item nav-item">
               <a
                 href="page-info.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >ダイビング情報</a
               >
-              <a href="page-info.html" class="global-nav__link"
-                >ライセンス講習</a
-              >
-              <a href="page-info.html" class="global-nav__link"
-                >体験ダイビング</a
-              >
-              <a href="page-info.html" class="global-nav__link"
+              <a href="page-info.html" class="nav-item__link">ライセンス講習</a>
+              <a href="page-info.html" class="nav-item__link">体験ダイビング</a>
+              <a href="page-info.html" class="nav-item__link"
                 >ファンダイビング</a
               >
               <a
                 href="page-blog.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >ブログ</a
               >
             </li>
-            <li class="global-nav__item global-nav__item--pl">
+            <li class="nav__item nav-item nav-item--pl">
               <a
                 href="page-voice.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >お客様の声</a
               >
               <a
                 href="page-price.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >料金一覧</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >ライセンス講習</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >体験ダイビング</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >ファンダイビング</a
               >
             </li>
-            <li class="global-nav__item global-nav__item--pl">
+            <li class="nav__item nav-item nav-item--pl">
               <a
                 href="page-faq.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >よくある質問</a
               >
               <a
                 href="page-privacy.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >プライバシー<br class="u-mobile" />ポリシー</a
               >
               <a
                 href="page-terms.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >利用規約</a
               >
               <a
                 href="page-contact.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >お問い合わせ</a
               >
             </li>

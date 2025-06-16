@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.fish-image {
+  aspect-ratio: 281 / 186;
+  margin-left: auto;
+  @include mq(md) {
+    aspect-ratio: 880 / 581;
+  }
+}
+
+.fish-image--page-about {
+  width: 100%;
+  @include mq(md) {
+    width: 81%;
+  }
+}

@@ -107,90 +107,90 @@
 
       <div class="header__drawer drawer js-drawer u-mobile">
         <div class="drawer__inner">
-          <nav class="drawer__nav global-nav">
-            <ul class="global-nav__items">
-              <li class="global-nav__item">
+          <nav class="drawer__nav nav">
+            <ul class="nav__items nav-items">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-campaign.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >キャンペーン</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >ライセンス取得</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >貸切体験ダイビング</a
                 >
-                <a href="page-campaign.html" class="global-nav__link"
+                <a href="page-campaign.html" class="nav-item__link"
                   >ナイトダイビング</a
                 >
                 <a
                   href="page-about.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >私たちについて</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-info.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >ダイビング情報</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >ライセンス講習</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >体験ダイビング</a
                 >
-                <a href="page-info.html" class="global-nav__link"
+                <a href="page-info.html" class="nav-item__link"
                   >ファンダイビング</a
                 >
                 <a
                   href="page-blog.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >ブログ</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-voice.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >お客様の声</a
                 >
                 <a
                   href="page-price.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >料金一覧</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >ライセンス講習</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >体験ダイビング</a
                 >
-                <a href="page-price.html" class="global-nav__link"
+                <a href="page-price.html" class="nav-item__link"
                   >ファンダイビング</a
                 >
               </li>
-              <li class="global-nav__item">
+              <li class="nav-items__item nav-item">
                 <a
                   href="page-faq.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >よくある質問</a
                 >
                 <a
                   href="page-privacy.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >プライバシー<br class="u-mobile" />ポリシー</a
                 >
                 <a
                   href="page-terms.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >利用規約</a
                 >
                 <a
                   href="page-contact.html"
-                  class="global-nav__link global-nav__link--bold"
+                  class="nav-item__link nav-item__link--bold"
                   >お問い合わせ</a
                 >
               </li>
@@ -241,12 +241,10 @@
       <!-- page-about -->
       <div class="page-about top-page-about">
         <div class="page-about__inner inner">
-          <div
-            class="page-about__content about-content about-content--page-about"
-          >
-            <div class="about-content__images">
+          <div class="page-about__content about-content">
+            <div class="about-content__images about-images">
               <div
-                class="about-content__first-image about-content__first-image--page-about"
+                class="about-images__dog-image dog-image dog-image--page-about"
               >
                 <picture>
                   <source
@@ -260,7 +258,7 @@
                 </picture>
               </div>
               <div
-                class="about-content__second-image about-content__second-image--page-about"
+                class="about-images__fish-image fish-image fish-image--page-about"
               >
                 <picture>
                   <source srcset="./assets/images/common/about2-pc.jpg" />
@@ -270,17 +268,14 @@
                   />
                 </picture>
               </div>
-              <div class="about-content__title--under-page u-mobile">
-                <h2>Dive into<br />the Ocean</h2>
-              </div>
             </div>
-            <div class="about-content__text-body">
-              <div class="about-content__message u-desktop">
-                <p>
-                  Dive into<br />
-                  the Ocean
-                </p>
-              </div>
+            <div
+              class="about-content__text-body about-content__text-body--page-about"
+            >
+              <h2 class="about-content__title about-content__title--page-about">
+                Dive into<br />
+                the Ocean
+              </h2>
               <div
                 class="about-content__text-block about-content__text-block--page-about"
               >
@@ -291,43 +286,44 @@
               </div>
             </div>
           </div>
+          <!-- gallery -->
           <section class="page-about__gallery gallery top-gallery">
             <div class="gallery__title section-title">
               <p class="section-title__main">gallery</p>
               <h2 class="section-title__sub">フォト</h2>
             </div>
-            <ul class="gallery__items">
-              <li class="gallery__item js-gallery">
+            <ul class="gallery__photos gallery-photos">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery1.jpg"
                   alt="海中に、たくさんの赤い魚が泳いでいる様子"
                 />
               </li>
-              <li class="gallery__item js-gallery">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery2.jpg"
                   alt="透き通った青い海に、２から３台のボートが浮かんでいる様子"
                 />
               </li>
-              <li class="gallery__item js-gallery">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery3.jpg"
                   alt="透き通った青い海に、２匹の魚が泳いでいる様子"
                 />
               </li>
-              <li class="gallery__item js-gallery">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery4.jpg"
                   alt="海中に、黄色い魚が一匹、手前で泳いでいる様子"
                 />
               </li>
-              <li class="gallery__item js-gallery">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery5.jpg"
                   alt="ダイビングで撮影された海中の美しい景色 水中写真ギャラリー"
                 />
               </li>
-              <li class="gallery__item js-gallery">
+              <li class="gallery-photos__item gallery-photo js-gallery-photo">
                 <img
                   src="./assets/images/common/gallery6.jpg"
                   alt="海中で色鮮やかな熱帯魚の群れが泳ぐ様子"
@@ -351,24 +347,24 @@
       </div>
 
       <!-- contact -->
-      <section class="contact top-contact--campaign">
+      <section class="contact top-contact top-contact--under-page">
         <div class="contact__inner inner">
           <div class="contact__content">
-            <div class="contact__info-body">
-              <div class="contact__info-logo">
+            <div class="contact__info contact-info">
+              <div class="contact-info__logo">
                 <img
                   src="./assets/images/common/logo-green.svg"
                   alt="たくさんの魚のイラスト"
                 />
               </div>
-              <div class="contact__info-bottom">
-                <div class="contact__info-text">
+              <div class="contact-info__bottom">
+                <div class="contact-info__text">
                   <p>沖縄県那覇市1-1</p>
                   <p>TEL:0120-000-0000</p>
                   <p>営業時間:8:30-19:00</p>
                   <p>定休日:毎週火曜日</p>
                 </div>
-                <div class="contact__info-map">
+                <div class="contact-info__map">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.4734888827224!2d127.67717481089305!3d26.213800489680988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699dc05bf813%3A0x3501764c0a57176d!2z44CSOTAwLTAwMTUg5rKW57iE55yM6YKj6KaH5biC5LmF6IyC5Zyw77yR5LiB55uu77yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1739413869416!5m2!1sja!2sjp"
                     width="600"
@@ -381,17 +377,19 @@
                 </div>
               </div>
             </div>
-            <div class="contact__text-block">
-              <div class="contact__title section-title">
-                <h2 class="section-title__main section-title__main--under-page">
+            <div class="contact__inquiry contact-inquiry">
+              <div class="contact-inquiry__title section-title">
+                <h2 class="section-title__main section-title__main--contact">
                   contact
                 </h2>
-                <p class="section-title__sub section-title__sub--under-page">
-                  お問い合わせ
+                <p class="section-title__sub section-title__sub--contact">
+                  お問合せ
                 </p>
               </div>
-              <p class="contact__description">ご予約・お問い合わせはコチラ</p>
-              <div class="contact__button contact__button--page-about">
+              <p class="contact-inquiry__description">
+                ご予約・お問い合わせはコチラ
+              </p>
+              <div class="contact-inquiry__button">
                 <a href="page-contact.html" class="button"
                   >Contact us<span class="button__arrow-right"></span
                 ></a>
@@ -404,7 +402,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer top-footer top-footer--page-about">
+    <footer class="footer top-footer">
       <div class="footer__inner inner">
         <div class="footer__header">
           <h1 class="footer__logo">
@@ -421,90 +419,86 @@
             </a>
           </div>
         </div>
-        <nav class="footer__nav footer__nav--under-page global-nav">
-          <ul class="global-nav__items">
-            <li class="global-nav__item">
+        <nav class="footer__nav nav">
+          <ul class="nav__items nav-items">
+            <li class="nav__item nav-item">
               <a
                 href="page-campaign.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >キャンペーン</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >ライセンス取得</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >貸切体験ダイビング</a
               >
-              <a href="page-campaign.html" class="global-nav__link"
+              <a href="page-campaign.html" class="nav-item__link"
                 >ナイトダイビング</a
               >
               <a
                 href="page-campaign.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >私たちについて</a
               >
             </li>
-            <li class="global-nav__item">
+            <li class="nav__item nav-item">
               <a
                 href="page-info.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >ダイビング情報</a
               >
-              <a href="page-info.html" class="global-nav__link"
-                >ライセンス講習</a
-              >
-              <a href="page-info.html" class="global-nav__link"
-                >体験ダイビング</a
-              >
-              <a href="page-info.html" class="global-nav__link"
+              <a href="page-info.html" class="nav-item__link">ライセンス講習</a>
+              <a href="page-info.html" class="nav-item__link">体験ダイビング</a>
+              <a href="page-info.html" class="nav-item__link"
                 >ファンダイビング</a
               >
               <a
                 href="page-blog.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >ブログ</a
               >
             </li>
-            <li class="global-nav__item global-nav__item--pl">
+            <li class="nav__item nav-item nav-item--pl">
               <a
                 href="page-voice.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >お客様の声</a
               >
               <a
                 href="page-price.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >料金一覧</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >ライセンス講習</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >体験ダイビング</a
               >
-              <a href="page-price.html" class="global-nav__link"
+              <a href="page-price.html" class="nav-item__link"
                 >ファンダイビング</a
               >
             </li>
-            <li class="global-nav__item global-nav__item--pl">
+            <li class="nav__item nav-item nav-item--pl">
               <a
                 href="page-faq.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >よくある質問</a
               >
               <a
                 href="page-privacy.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >プライバシー<br class="u-mobile" />ポリシー</a
               >
               <a
                 href="page-terms.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >利用規約</a
               >
               <a
                 href="page-contact.html"
-                class="global-nav__link global-nav__link--bold"
+                class="nav-item__link nav-item__link--bold"
                 >お問い合わせ</a
               >
             </li>

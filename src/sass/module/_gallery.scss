@@ -18,43 +18,9 @@
   }
 }
 
-.gallery__items {
+.gallery__photos {
   margin-top: rem(40);
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: rem(8);
   @include mq(md) {
     margin-top: rem(80);
-    grid-template-columns: repeat(11, 1fr);
-    grid-auto-rows: 1fr;
-    grid-auto-flow: dense;
-  }
-}
-
-.gallery__item {
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  aspect-ratio: 345 / 218;
-  @include mq(md) {
-    grid-column: span 6;
-    grid-row: span 1;
-  }
-}
-
-.gallery__item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.gallery__item:nth-child(6n + 1),
-.gallery__item:nth-child(6n + 6) {
-  aspect-ratio: 345 / 524;
-  @include mq(md) {
-    aspect-ratio: 492 / 746;
-    grid-column: span 5;
-    grid-row: span 2;
   }
 }

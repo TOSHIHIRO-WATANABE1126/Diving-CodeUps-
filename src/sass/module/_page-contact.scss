@@ -29,20 +29,4 @@
 
 .page-contact__form {
   max-width: 700px;
-  margin-inline: auto;
-}
-
-.page-contact__privacy {
-  margin-top: rem(38);
-  @include mq(md) {
-    margin-top: rem(80);
-  }
-}
-
-.page-contact__button {
-  margin-top: rem(24);
-  text-align: center;
-  @include mq(md) {
-    margin-top: rem(40);
-  }
 }

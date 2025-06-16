@@ -1,65 +1,9 @@
 @use "global" as *;
 
 .top-footer {
-  margin-top: rem(105);
-  @include mq(md) {
-    margin-top: rem(160);
-  }
-}
-
-.top-footer--page-campaign {
-  margin-top: rem(105);
-  @include mq(md) {
-    margin-top: rem(160);
-  }
-}
-
-.top-footer--page-about {
-  margin-top: rem(105);
-  @include mq(md) {
-    margin-top: rem(151);
-  }
-}
-
-.top-footer--page-info {
-  margin-top: rem(104);
+  margin-top: rem(97);
   @include mq(md) {
     margin-top: rem(150);
-  }
-}
-
-.top-footer--page-blog {
-  margin-top: rem(104);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
-
-.top-footer--page-contact {
-  margin-top: rem(104);
-  @include mq(md) {
-    margin-top: rem(157);
-  }
-}
-
-.top-footer--page-price {
-  margin-top: rem(95);
-  @include mq(md) {
-    margin-top: rem(157);
-  }
-}
-
-.top-footer--page-faq {
-  margin-top: rem(104);
-  @include mq(md) {
-    margin-top: rem(157);
-  }
-}
-
-.top-footer--page-contact {
-  margin-top: rem(150);
-  @include mq(md) {
-    margin-top: rem(157);
   }
 }
 

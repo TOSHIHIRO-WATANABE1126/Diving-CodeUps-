@@ -44,10 +44,7 @@
 }
 
 .side-campaign__cards {
-  margin-top: rem(24);
-  @include mq(md) {
-    margin-top: rem(18);
-  }
+  margin-top: rem(21);
 }
 
 .side-campaign__button {

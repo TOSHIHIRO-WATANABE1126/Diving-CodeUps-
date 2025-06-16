@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.contact-privacy {
+.form-privacy {
   [type="checkbox"] {
     display: inline-block;
     width: rem(1);
@@ -17,7 +17,7 @@
   }
 }
 
-.contact-privacy__checkbox {
+.form-privacy__checkbox {
   display: inline-block;
   padding-left: rem(31);
   padding-right: rem(31);
@@ -27,7 +27,7 @@
   }
 }
 
-.contact-privacy__checkbox-text {
+.form-privacy__checkbox-text {
   padding-left: rem(30);
   text-align: left;
   font-size: rem(14);
@@ -44,8 +44,8 @@
   }
 }
 
-.contact-privacy__checkbox-text::before,
-.contact-privacy__checkbox-text::after {
+.form-privacy__checkbox-text::before,
+.form-privacy__checkbox-text::after {
   position: absolute;
   content: "";
   top: 28%;
@@ -55,14 +55,14 @@
   }
 }
 
-.contact-privacy__checkbox-text::before {
+.form-privacy__checkbox-text::before {
   left: 0;
   width: rem(22);
   height: rem(22);
   border: 1px solid $green;
 }
 
-.contact-privacy__checkbox-text::after {
+.form-privacy__checkbox-text::after {
   left: rem(3);
   background-image: url(../images/common/Vector.png);
   background-repeat: no-repeat;

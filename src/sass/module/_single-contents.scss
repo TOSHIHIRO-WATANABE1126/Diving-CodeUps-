@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.single-contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(80);
+  @include mq(md) {
+    flex-direction: row;
+    column-gap: rem(88);
+    row-gap: 0;
+  }
+}
+
+.single-contents__main {
+  max-width: rem(700);
+}
+
+.single-contents__side {
+}

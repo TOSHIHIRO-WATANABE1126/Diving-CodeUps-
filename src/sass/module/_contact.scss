@@ -22,6 +22,9 @@
   }
 }
 
+.contact__inner {
+}
+
 .contact__content {
   background-color: $white;
   @include mq(md) {
@@ -32,192 +35,16 @@
   }
 }
 
-.contact__info-body {
-  text-align: center;
-  padding-left: rem(25);
-  padding-right: rem(25);
-  position: relative;
+.contact__info {
   @include mq(md) {
     width: 53%;
-    padding-left: rem(50);
-    padding-right: rem(80);
   }
 }
 
-.contact__info-body::after {
-  @include mq(md) {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    width: rem(1);
-    height: 100%;
-    background-color: $green;
-  }
-}
-
-.contact__info-logo {
-  display: flex;
-  margin-inline: auto;
-  width: rem(174);
-  @include mq(md) {
-    width: rem(200);
-  }
-}
-
-.contact__info-bottom {
-  margin-top: rem(6);
-  border-top: rem(1) solid $green;
-  padding-top: rem(11);
-  display: flex;
-  flex-direction: column;
-  gap: rem(17);
-  @include mq(md) {
-    margin-top: rem(12);
-    padding-top: rem(24);
-    flex-direction: row;
-  }
-}
-
-.contact__info-text {
-  @include mq(md) {
-    width: 38%;
-    text-align: left;
-  }
-}
-
-.contact__info-text p {
-  margin-top: rem(4);
-  color: $black;
-  font-family: "Noto Sans JP";
-  font-size: rem(16);
-  line-height: 1.5;
-  @include mq(md) {
-    margin-top: rem(2);
-  }
-}
-
-.contact__info-map {
-  width: 100%;
-  @include mq(md) {
-    width: 68%;
-    max-width: rem(273);
-  }
-}
-
-.contact__info-map iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 295 / 160;
-  object-fit: cover;
-  @include mq(md) {
-    aspect-ratio: 273 / 148;
-  }
-}
-
-.contact__text-block {
+.contact__inquiry {
   margin-top: rem(40);
-  text-align: center;
   @include mq(md) {
     margin-top: 0;
     width: 47%;
-    padding-top: rem(25);
-    padding-right: rem(30);
-  }
-}
-
-.contact__text-block--page-price {
-  margin-top: 28px;
-}
-
-.contact-title__main.section-title__main {
-  font-size: rem(80);
-}
-
-.contact-title__sub.section-title__sub {
-  margin-top: rem(-16);
-  @include mq(md) {
-    margin-top: rem(-7);
-  }
-}
-
-.contact__description {
-  margin-top: 8px;
-  color: $green;
-  text-align: center;
-  font-family: "Noto Sans JP";
-  font-size: rem(14);
-  line-height: 1.28571;
-}
-
-.contact__button {
-  margin-top: rem(41);
-  @include mq(md) {
-    margin-top: rem(27);
-  }
-}
-
-.contact__button--page-campaign {
-  margin-top: rem(30);
-  @include mq(md) {
-    margin-top: rem(44);
-  }
-}
-
-.contact__button--page-about {
-  @include mq(md) {
-    margin-top: rem(30);
-  }
-}
-
-.contact__button--page-info {
-  @include mq(md) {
-    margin-top: rem(31);
-  }
-}
-
-.contact__button--page-blog {
-  @include mq(md) {
-    margin-top: rem(36);
-  }
-}
-
-.contact__button--page-voice {
-  @include mq(md) {
-    margin-top: rem(34);
-  }
-}
-
-.contact__button--page-price {
-  @include mq(md) {
-    margin-top: rem(37);
-  }
-}
-
-.contact__button--page-faq {
-  margin-top: rem(37);
-  @include mq(md) {
-    margin-top: rem(37);
-  }
-}
-
-.contact__button--page-sitemap {
-  @include mq(md) {
-    margin-top: rem(37);
-  }
-}
-
-.contact__button--page-privacy {
-  margin-top: rem(37);
-  @include mq(md) {
-    margin-top: rem(40);
-  }
-}
-
-.contact__button--page-terms {
-  margin-top: rem(34);
-  @include mq(md) {
-    margin-top: rem(40);
   }
 }

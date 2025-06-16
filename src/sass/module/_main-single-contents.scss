@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.main-single-contents {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(29);
+  @include mq(md) {
+    row-gap: rem(45);
+  }
+}
+
+.main-single-contents__content {
+}
